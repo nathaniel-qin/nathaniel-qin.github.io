@@ -1,5 +1,7 @@
-#nav-col {
+a {
+  color: black;
+}
+
+body {
   font-family: 'Alegreya', serif;
-  font-weight: 600;
-  font-size: 1.25em;
 }
