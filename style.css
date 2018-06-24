@@ -5,3 +5,48 @@ a {
 body {
   font-family: 'Alegreya', serif;
 }
+
+nav {
+  border-bottom: 4px dotted rgb(220, 220, 220);
+}
+
+.nav-option {
+  color: rgb(111, 111, 111);
+  text-align: center;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.nav-option:hover {
+  color: rgb(111, 111, 111);
+}
+
+.active {
+  color: black !important;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-option {
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+}
+
+#logo {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: left;
+  height: 100%;
+  margin-left: 3%;
+}
+
+#collapse-button {
+  float: right !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 3%;
+}
+
+#collapse-button:focus {
+  outline: none;
+}

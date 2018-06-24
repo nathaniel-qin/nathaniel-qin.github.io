@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Alegreya:400,600" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery.color.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
@@ -15,21 +16,28 @@
 </head>
 
 <body>
-  <nav class="container-fluid row">
-    <!--nav bar-->
-    <div class="col-md-9">
-      <a href="index.html" class="navbar-brand">
-        <img src="Media/icon-black.png" width=50 height=50 alt=""> nathaniel qin \
+  <!--nav bar-->
+  <nav class="container-fluid row no-gutters fixed-top navbar-expand-md navbar-light">
+    <div class="col-md-7">
+      <a href="index.html" class="navbar-brand" id="logo">
+        <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
       </a>
+      <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    <div class="col-md-1">
-      <a href="index.html" class="nav-item nav-link"><span class="navbar-text">home</a>
-    </div>
-    <div class="col-md-1">
-      <a href="projects.html" class="nav-item nav-link"><span class="navbar-text">projects</a>
-    </div>
-    <div class="col-md-1">
-      <a href="contact.html" class="nav-item nav-link"><span class="navbar-text">contact</a>
+    <div class="col collapse navbar-collapse" id="navbar-content">
+      <div class="col row no-gutters">
+        <div class="col">
+          <a href="index.html" class="nav-link nav-option"><span class="active">home</a>
+        </div>
+        <div class="col">
+          <a href="projects.html" class="nav-link nav-option">projects</a>
+        </div>
+        <div class="col">
+          <a href="contact.html" class="nav-link nav-option">contact</a>
+        </div>
+      </div>
     </div>
   </nav>
   <!--content-->
@@ -38,3 +46,18 @@
   </div>
 </body>
 </html>
+
+<script>
+$(".nav-option").hover(
+  function() {
+    $(this).animate({
+      backgroundColor: "rgb(240, 240, 240)",
+    }, 175);
+  }, function() {
+    $(this).stop(true);
+    $(this).animate({
+      backgroundColor: "white"
+    }, 175);
+  }
+);
+</script>
