@@ -11,18 +11,19 @@ nav {
 }
 
 .nav-option {
-  color: rgb(111, 111, 111);
+  color: rgb(130, 130, 130);
   text-align: center;
   width: 100%;
   font-size: 1.25em;
   font-weight: 600;
+  background-color: white;
 }
 
 .nav-option:hover {
   color: rgb(111, 111, 111);
 }
 
-.active {
+.active-text {
   color: black !important;
 }
 
