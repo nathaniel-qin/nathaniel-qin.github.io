@@ -18,7 +18,7 @@
 <body>
   <!--nav bar-->
   <nav class="container-fluid row no-gutters fixed-top navbar-expand-md navbar-light">
-    <div class="col-md-7">
+    <div class="col-md-6">
       <a href="index.html" class="navbar-brand" id="logo">
         <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
       </a>
@@ -26,8 +26,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <div class="col collapse navbar-collapse" id="navbar-content">
-      <div class="col row no-gutters">
+    <div class="col-md-6 collapse navbar-collapse" id="navbar-content">
+      <div class="col row no-gutters container-fluid">
         <div class="col">
           <a href="index.html" class="nav-link nav-option"><span class="active-text">home</a>
         </div>
@@ -41,7 +41,8 @@
     </div>
   </nav>
   <!--content-->
-  <div>
+  <div class="container-fluid" id="content">
+    <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
   </div>
 </body>
 </html>
@@ -49,18 +50,37 @@
 <script>
 $(document).ready(function() {
   $(".nav-option").css("background-color", "white");
-});
 
-$(".nav-option").hover(
-  function() {
-    $(this).animate({
-      backgroundColor: "rgb(240, 240, 240)"
-    }, 175);
-  }, function() {
-    $(this).stop(true);
-    $(this).animate({
-      backgroundColor: "white"
-    }, 175);
-  }
-);
+  $(".nav-option").hover(
+    function() {
+      $(this).animate({
+        backgroundColor: "rgb(240, 240, 240)"
+      }, 175);
+    }, function() {
+      $(this).stop(true);
+      $(this).animate({
+        backgroundColor: "white"
+      }, 175);
+    }
+  );
+
+  $("#collapse-button").click(function(e) {
+    e.preventDefault();
+    var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
+    if(isExpanded !== "true") {
+      $("#content").animate({
+        top: "111px",
+        backgroundColor: "gray",
+        opacity: "0.5"
+      }, 210);
+    } else {
+      $("#content").animate({
+        top: "62px",
+        backgroundColor: "white",
+        opacity: "1"
+      }, 210);
+    }
+  });
+
+});
 </script>
