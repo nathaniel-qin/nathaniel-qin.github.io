@@ -17,6 +17,14 @@ nav {
         transition: height .25s ease;
 }
 
+@media screen and (min-width: 768px) {
+  .collapsing {
+    -webkit-transition: height .01s ease;
+       -o-transition: height .01s ease;
+          transition: height .01s ease;
+  }
+}
+
 .nav-option {
   color: rgb(150, 150, 150);
   text-align: center;

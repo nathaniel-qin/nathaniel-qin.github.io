@@ -17,7 +17,7 @@
 
 <body>
   <!--nav bar-->
-  <nav class="container-fluid row no-gutters fixed-top navbar-expand-md navbar-light">
+  <nav class="container-fluid row no-gutters sticky-top navbar-expand-md navbar-light">
     <div class="col-md-6">
       <a href="index.html" class="navbar-brand" id="logo">
         <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
@@ -41,7 +41,7 @@
     </div>
   </nav>
   <!--content-->
-  <div class="container-fluid">
+  <div class="container-fluid" id="content">
     <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
   </div>
 </body>
@@ -49,7 +49,17 @@
 
 <script>
 $(document).ready(function() {
-  $(".nav-option").css("background-color", "white");
+
+  $(window).on("resize", function () {
+    var w = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (w > 768) {
+      $("#navbar-content").collapse("hide");
+      $("#content").css({"backgroundColor": "white", "color": "black"});
+    }
+  });
 
   $(".nav-option").hover(
     function() {

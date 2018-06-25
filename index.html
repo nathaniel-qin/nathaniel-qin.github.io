@@ -41,7 +41,7 @@
     </div>
   </nav>
   <!--content-->
-  <div class="container-fluid">
+  <div class="container-fluid" id="content">
     <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
   </div>
 </body>
@@ -49,7 +49,17 @@
 
 <script>
 $(document).ready(function() {
-  $(".nav-option").css("background-color", "white");
+
+  $(window).on("resize", function () {
+    var w = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (w > 768) {
+      $("#navbar-content").collapse("hide");
+      $("#content").css({"backgroundColor": "white", "color": "black"});
+    }
+  });
 
   $(".nav-option").hover(
     function() {
@@ -57,8 +67,7 @@ $(document).ready(function() {
         backgroundColor: "rgb(240, 240, 240)"
       }, 175);
     }, function() {
-      $(this).stop(true);
-      $(this).animate({
+      $(this).stop(true).animate({
         backgroundColor: "white"
       }, 175);
     }
