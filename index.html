@@ -17,7 +17,7 @@
 
 <body>
   <!--nav bar-->
-  <nav class="container-fluid row no-gutters fixed-top navbar-expand-md navbar-light">
+  <nav class="container-fluid row no-gutters sticky-top navbar-expand-md navbar-light">
     <div class="col-md-6">
       <a href="index.html" class="navbar-brand" id="logo">
         <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
@@ -41,7 +41,7 @@
     </div>
   </nav>
   <!--content-->
-  <div class="container-fluid" id="content">
+  <div class="container-fluid">
     <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
   </div>
 </body>
@@ -69,11 +69,13 @@ $(document).ready(function() {
     var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
     if(isExpanded !== "true") {
       $("#content").animate({
-        opacity: "0.25"
+        backgroundColor: "rgb(200, 200, 200)",
+        color: "rgb(100, 100, 100)"
       }, 200);
     } else {
       $("#content").animate({
-        opacity: "1"
+        backgroundColor: "white",
+        color: "black"
       }, 200);
     }
   });

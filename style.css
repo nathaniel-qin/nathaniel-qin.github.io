@@ -58,9 +58,3 @@ nav {
 #collapse-button:focus {
   outline: none;
 }
-
-#content {
-  position: relative;
-  top: 62px;
-  z-index: -1;
-}
