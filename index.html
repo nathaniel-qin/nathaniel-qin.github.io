@@ -69,16 +69,12 @@ $(document).ready(function() {
     var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
     if(isExpanded !== "true") {
       $("#content").animate({
-        top: "111px",
-        backgroundColor: "gray",
-        opacity: "0.5"
-      }, 210);
+        opacity: "0.25"
+      }, 200);
     } else {
       $("#content").animate({
-        top: "62px",
-        backgroundColor: "white",
         opacity: "1"
-      }, 210);
+      }, 200);
     }
   });
 

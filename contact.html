@@ -27,7 +27,7 @@
       </button>
     </div>
     <div class="col-md-6 collapse navbar-collapse" id="navbar-content">
-      <div class="col row no-gutters">
+      <div class="col row no-gutters container-fluid">
         <div class="col">
           <a href="index.html" class="nav-link nav-option">home</a>
         </div>
@@ -41,7 +41,8 @@
     </div>
   </nav>
   <!--content-->
-  <div>
+  <div class="container-fluid" id="content">
+    <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
   </div>
 </body>
 </html>
@@ -49,18 +50,33 @@
 <script>
 $(document).ready(function() {
   $(".nav-option").css("background-color", "white");
-});
 
-$(".nav-option").hover(
-  function() {
-    $(this).animate({
-      backgroundColor: "rgb(240, 240, 240)"
-    }, 175);
-  }, function() {
-    $(this).stop(true);
-    $(this).animate({
-      backgroundColor: "white"
-    }, 175);
-  }
-);
+  $(".nav-option").hover(
+    function() {
+      $(this).animate({
+        backgroundColor: "rgb(240, 240, 240)"
+      }, 175);
+    }, function() {
+      $(this).stop(true);
+      $(this).animate({
+        backgroundColor: "white"
+      }, 175);
+    }
+  );
+
+  $("#collapse-button").click(function(e) {
+    e.preventDefault();
+    var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
+    if(isExpanded !== "true") {
+      $("#content").animate({
+        opacity: "0.25"
+      }, 200);
+    } else {
+      $("#content").animate({
+        opacity: "1"
+      }, 200);
+    }
+  });
+
+});
 </script>
