@@ -16,30 +16,32 @@
 </head>
 
 <body>
-  <!--nav bar-->
-  <nav class="container-fluid row no-gutters sticky-top navbar-expand-md navbar-light">
-    <div class="col-md-6">
-      <a href="index.html" class="navbar-brand" id="logo">
-        <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
-      </a>
-      <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="col-md-6 collapse navbar-collapse" id="navbar-content">
-      <div class="col row no-gutters container-fluid">
-        <div class="col">
-          <a href="index.html" class="nav-link nav-option">projects</a>
-        </div>
-        <div class="col">
-          <a href="about.html" class="nav-link nav-option">about</a>
-        </div>
-        <div class="col">
-          <a href="contact.html" class="nav-link nav-option"><span class="active-text">contact</a>
+  <div class="container-fluid">
+    <!--nav bar-->
+    <nav class="row no-gutters sticky-top navbar-expand-md navbar-light">
+      <div class="col-md-6">
+        <a href="index.html" class="navbar-brand" id="logo">
+          <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
+        </a>
+        <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="col-md-6 collapse navbar-collapse" id="navbar-content">
+        <div class="row no-gutters">
+          <div class="col">
+            <a href="index.html" class="nav-link nav-option">projects</a>
+          </div>
+          <div class="col">
+            <a href="about.html" class="nav-link nav-option">about</a>
+          </div>
+          <div class="col">
+            <a href="contact.html" class="nav-link nav-option"><span class="active-text">contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
   <!--content-->
   <div class="container-fluid" id="content">
     <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
@@ -57,7 +59,7 @@ $(document).ready(function() {
 
     if (w > 768) {
       $("#navbar-content").collapse("hide");
-      $("#content").css({"backgroundColor": "white", "color": "black"});
+      $("#content").css({"backgroundColor": "white", "opacity": "1"});
     }
   });
 
