@@ -29,10 +29,10 @@
     <div class="col-md-6 collapse navbar-collapse" id="navbar-content">
       <div class="col row no-gutters container-fluid">
         <div class="col">
-          <a href="index.html" class="nav-link nav-option"><span class="active-text">home</a>
+          <a href="index.html" class="nav-link nav-option"><span class="active-text">projects</a>
         </div>
         <div class="col">
-          <a href="projects.html" class="nav-link nav-option">projects</a>
+          <a href="about.html" class="nav-link nav-option">about</a>
         </div>
         <div class="col">
           <a href="contact.html" class="nav-link nav-option">contact</a>
@@ -42,7 +42,7 @@
   </nav>
   <!--content-->
   <div class="container-fluid" id="content">
-    <p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
+<p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
   </div>
 </body>
 </html>
@@ -79,11 +79,13 @@ $(document).ready(function() {
     if(isExpanded !== "true") {
       $("#content").animate({
         backgroundColor: "rgb(200, 200, 200)",
+        opacity: "0.8",
         color: "rgb(100, 100, 100)"
       }, 200);
     } else {
       $("#content").animate({
         backgroundColor: "white",
+        opacity: "1",
         color: "black"
       }, 200);
     }

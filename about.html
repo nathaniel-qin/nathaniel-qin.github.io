@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title>nathaniel qin - projects</title>
+  <title>nathaniel qin - about</title>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,10 +29,10 @@
     <div class="col-md-6 collapse navbar-collapse" id="navbar-content">
       <div class="col row no-gutters container-fluid">
         <div class="col">
-          <a href="index.html" class="nav-link nav-option">home</a>
+          <a href="index.html" class="nav-link nav-option">projects</a>
         </div>
         <div class="col">
-          <a href="projects.html" class="nav-link nav-option"><span class="active-text">projects</a>
+          <a href="about.html" class="nav-link nav-option"><span class="active-text">about</a>
         </div>
         <div class="col">
           <a href="contact.html" class="nav-link nav-option">contact</a>
@@ -80,11 +80,13 @@ $(document).ready(function() {
     if(isExpanded !== "true") {
       $("#content").animate({
         backgroundColor: "rgb(200, 200, 200)",
+        opacity: "0.8",
         color: "rgb(100, 100, 100)"
       }, 200);
     } else {
       $("#content").animate({
         backgroundColor: "white",
+        opacity: "1",
         color: "black"
       }, 200);
     }
