@@ -79,15 +79,13 @@ $(document).ready(function() {
     var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
     if(isExpanded !== "true") {
       $("#content").animate({
-        backgroundColor: "rgb(200, 200, 200)",
-        opacity: "0.8",
-        color: "rgb(100, 100, 100)"
+        backgroundColor: "rgb(240, 240, 240)",
+        opacity: "0.6"
       }, 200);
     } else {
       $("#content").animate({
         backgroundColor: "white",
-        opacity: "1",
-        color: "black"
+        opacity: "1"
       }, 200);
     }
   });
