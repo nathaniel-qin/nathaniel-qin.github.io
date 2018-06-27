@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Alegreya:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="jquery.color.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -42,8 +43,17 @@
   </nav>
   <!--content-->
   <div class="container-fluid" id="content">
-<p>this is sample text<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more<br>and more</p>
-  </div>
+    <div class="row" id="intro">
+      <div class="col-md-6 offset-md-0 col-12 offset-2">
+        <h1>hi, i'm<br><span style="font-weight: 400">nathaniel</span></h1>
+      </div>
+      <div class="col-md-6 offset-md-0 col-10">
+        <h2>an aspiring <br>UX designer // <br>front-end developer</h2>
+      </div>
+    </div>
+    <div class="row project">
+
+    </div>
 </body>
 </html>
 
@@ -78,15 +88,13 @@ $(document).ready(function() {
     var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
     if(isExpanded !== "true") {
       $("#content").animate({
-        backgroundColor: "rgb(200, 200, 200)",
-        opacity: "0.8",
-        color: "rgb(100, 100, 100)"
+        backgroundColor: "rgb(240, 240, 240)",
+        opacity: "0.6",
       }, 200);
     } else {
       $("#content").animate({
         backgroundColor: "white",
         opacity: "1",
-        color: "black"
       }, 200);
     }
   });

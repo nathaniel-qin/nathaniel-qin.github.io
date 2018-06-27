@@ -6,6 +6,16 @@ body {
   font-family: 'Alegreya', serif;
 }
 
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+}
+
 nav {
   border-bottom: 3.5px dotted rgb(220, 220, 220);
   background-color: white;
@@ -65,4 +75,40 @@ nav {
 
 #collapse-button:focus {
   outline: none;
+}
+
+#intro {
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  #intro {
+    padding-top: 10%;
+  }
+
+  #intro h1 {
+    text-align: left;
+    font-size: 3em;
+  }
+
+  #intro h2 {
+    text-align: right;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #intro {
+    padding-top: 5%;
+  }
+
+  #intro h1 {
+    text-align: right;
+    font-size: 3.5em;
+  }
+
+  #intro h2 {
+    text-align: left;
+    font-size: 2.25em;
+  }
 }
