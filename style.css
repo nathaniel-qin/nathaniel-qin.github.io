@@ -15,7 +15,8 @@ h2 {
 }
 
 h4 {
-  font-weight: 300;
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
 }
 
 p {
@@ -26,11 +27,6 @@ nav {
   font-family: 'Alegreya', serif;
   border-bottom: 3.5px dotted rgb(220, 220, 220);
   background-color: white;
-}
-
-a:hover {
-  text-decoration: none;
-  color: black;
 }
 
 .collapsing {
@@ -71,40 +67,50 @@ a:hover {
 }
 
 .project {
-  height: 200px;
-  border-bottom: 4px solid lightgrey;
-  padding: 0.5%;
-  border-radius: 1%;
+  height: 300px;
+  box-shadow: 0px 0px 10px gray;
+  padding: 1%;
+  margin: 0.5%;
 }
 
 .project:hover {
-  transform: translateY(2px);
-  border-bottom: 2px solid lightgrey;
-  border-top: 2px solid white;
+  opacity: 0.9;
+  box-shadow: 0px 0px 10px black;
 }
 
 .project-image {
   height: 100%;
-  background-image: url("Media/word_of_hands.png");
   background-size: cover;
   background-position: center;
 }
 
+#word-of-hands {
+  background-image: url("Media/word_of_hands.png");
+}
+
+#carpool {
+  background-image: url("Media/carpool.png");
+}
+
 .project-words {
   padding: 2%;
-  background: linear-gradient(to right, white, rgb(230, 230, 230));
+  padding-left: 20px;
 }
 
 .project-words h4 {
   font-size: 2.5em;
+  padding-bottom: 2%;
+  border-bottom: 2px solid gray;
 }
 
 .project-words p {
   font-size: 1.25em;
 }
 
-.project-next {
-  padding-top: 80px;
+.read-more {
+  text-align: right;
+  font-size: 1em !important;
+  color: rgb(150, 150, 150);
 }
 
 #logo {
@@ -163,8 +169,5 @@ a:hover {
 }
 
 #projects-section {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 5%;
 }
