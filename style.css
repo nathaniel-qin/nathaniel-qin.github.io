@@ -1,9 +1,12 @@
+/* general style */
+
 a {
   color: black;
 }
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  overflow: auto;
 }
 
 h1 {
@@ -65,6 +68,8 @@ nav {
     border-top: 1px solid rgb(230, 230, 230);
   }
 }
+
+/* for project page */
 
 .project {
   height: 300px;
@@ -170,6 +175,8 @@ nav {
   right: 20px;
 }
 
+/* navbar ids */
+
 #logo {
   font-size: 1.5em;
   font-weight: 400;
@@ -227,4 +234,11 @@ nav {
 
 #projects-section {
   margin-top: 7.5%;
+}
+
+/* for project pages */
+
+#project-title {
+  padding-top: 5%;
+  text-align: center;
 }
