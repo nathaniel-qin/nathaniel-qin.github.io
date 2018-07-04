@@ -68,9 +68,11 @@ nav {
 
 .project {
   height: 300px;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px gray;
   padding: 1%;
   margin: 0.5%;
+  margin-bottom: 25px;
 }
 
 .project:hover {
@@ -84,6 +86,54 @@ nav {
   background-position: center;
 }
 
+@media screen and (max-width: 575px) {
+
+  .project-words h4 {
+    font-size: 1.5em;
+  }
+
+  .project-words p {
+    font-size: 0.9em;
+  }
+
+  .project {
+    height: 180px;
+  }
+
+  .read-more {
+    font-size: 0.75em !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+
+  .project-words h4 {
+    font-size: 2.5em;
+  }
+
+  .project-words p {
+    font-size: 1.25em;
+  }
+
+  .project {
+    height: 250px;
+  }
+
+  .read-more {
+    font-size: 1em !important;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
 #word-of-hands {
   background-image: url("Media/word_of_hands.png");
 }
@@ -92,25 +142,32 @@ nav {
   background-image: url("Media/carpool.png");
 }
 
+#simply-snap {
+  background-image: url("Media/simply_snap.png");
+}
+
+#battlecode {
+  background-image: url("Media/battlecode.png");
+}
+
 .project-words {
-  padding: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-left: 20px;
+  padding-right: 10px;
 }
 
 .project-words h4 {
-  font-size: 2.5em;
   padding-bottom: 2%;
   border-bottom: 2px solid gray;
 }
 
-.project-words p {
-  font-size: 1.25em;
-}
-
 .read-more {
-  text-align: right;
-  font-size: 1em !important;
   color: rgb(150, 150, 150);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
 
 #logo {
@@ -169,5 +226,5 @@ nav {
 }
 
 #projects-section {
-  margin-top: 5%;
+  margin-top: 7.5%;
 }

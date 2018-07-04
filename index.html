@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="jquery.color.min.js"></script>
+  <script src="nav.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
@@ -57,8 +58,8 @@
     </div>
     <div class="container-fluid" id="projects-section">
       <div class="row">
-        <div class="col-md-6" onclick="#">
-          <div class="row project">
+        <div class="col-lg-6">
+          <div class="row project" id="woh_box">
             <div class="col-4 project-image" id="word-of-hands"></div>
             <div class="col-8 project-words">
               <h4>Word of Hands</h4>
@@ -67,12 +68,34 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6" onclick="#">
-          <div class="row project">
+        <div class="col-lg-6" onclick="#">
+          <div class="row project" id="car_box">
             <div class="col-4 project-image" id="carpool"></div>
             <div class="col-8 project-words">
               <h4>Carpool</h4>
-              <p>mobile application prototype designed to bridge accessibility to the Deaf community</p>
+              <p>web application for college fellowship carpool ministry with riddles and puzzles</p>
+              <p class="read-more">see more >></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row project" id="ss_box">
+            <div class="col-4 project-image" id="simply-snap"></div>
+            <div class="col-8 project-words">
+              <h4>Simply Snap</h4>
+              <p>web application prototype to facilitate digitization of various contents</p>
+              <p class="read-more">see more >></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" onclick="#">
+          <div class="row project" id="bc_box">
+            <div class="col-4 project-image" id="battlecode"></div>
+            <div class="col-8 project-words">
+              <h4>Battlecode 2018</h4>
+              <p>MIT coding competition focused on programming successful gaming strategies</p>
               <p class="read-more">see more >></p>
             </div>
           </div>
@@ -86,44 +109,37 @@
 <script>
 $(document).ready(function() {
 
-  $(window).on("resize", function () {
-    var w = window.innerWidth
-      || document.documentElement.clientWidth
-      || document.body.clientWidth;
+  var $wohBox = $("#woh_box");
+  var $carBox = $("#car_box");
+  var $ssBox = $("#ss_box");
+  var $bcBox = $("#bc_box");
 
-    if (w > 768) {
-      $("#navbar-content").collapse("hide");
-      $("#content").css({"backgroundColor": "white", "opacity": "1"});
-    }
+  $wohBox.on("click", function() {
+    window.location.href = "word_of_hands.html";
+  });
+  $wohBox.on("mouseover", function() {
+    $wohBox.css("cursor", "pointer");
   });
 
-  $(".nav-option").hover(
-    function() {
-      $(this).animate({
-        backgroundColor: "rgb(240, 240, 240)"
-      }, 175);
-    }, function() {
-      $(this).stop(true).animate({
-        backgroundColor: "white"
-      }, 175);
-    }
-  );
-
-  $("#collapse-button").click(function(e) {
-    e.preventDefault();
-    var isExpanded = document.getElementById("collapse-button").getAttribute("aria-expanded");
-    if(isExpanded !== "true") {
-      $("#content").animate({
-        backgroundColor: "rgb(240, 240, 240)",
-        opacity: "0.6"
-      }, 200);
-    } else {
-      $("#content").animate({
-        backgroundColor: "white",
-        opacity: "1"
-      }, 200);
-    }
+  $carBox.on("click", function() {
+    window.location.href = "carpool.html";
+  });
+  $carBox.on("mouseover", function() {
+    $carBox.css("cursor", "pointer");
   });
 
+  $ssBox.on("click", function() {
+    window.location.href = "simply_snap.html";
+  });
+  $ssBox.on("mouseover", function() {
+    $ssBox.css("cursor", "pointer");
+  });
+
+  $bcBox.on("click", function() {
+    window.location.href = "battlecode.html";
+  });
+  $bcBox.on("mouseover", function() {
+    $bcBox.css("cursor", "pointer");
+  });
 });
 </script>
