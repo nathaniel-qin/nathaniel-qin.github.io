@@ -39,4 +39,14 @@ $(document).ready(function() {
     }
   });
 
+  function isVisible(elem) {
+    var elemTop = $(elem).offset().top;
+    var elemBottom = $(elem).height() + elemTop;
+
+    var docTop = $(window).scrollTop();
+    var docBottom = $(window).height() + docTop + (0.5 * $(elem).height());
+
+    return (elemTop >= docTop) &&  (elemBottom <= docBottom);
+  }
+
 });
