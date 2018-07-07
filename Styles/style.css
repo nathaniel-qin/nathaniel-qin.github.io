@@ -1,0 +1,52 @@
+a {
+  color: black;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  overflow: auto;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h4 {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
+}
+
+nav {
+  font-family: 'Alegreya', serif;
+  border-bottom: 3.5px dotted rgb(220, 220, 220);
+  background-color: white;
+}
+
+hr {
+  border: 1px solid rgb(220, 220, 220);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  line-height: 0.5em;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: gray;
+}
