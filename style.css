@@ -40,6 +40,17 @@ hr {
 
 footer {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  line-height: 0.5em;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: gray;
 }
 
 .collapsing {
