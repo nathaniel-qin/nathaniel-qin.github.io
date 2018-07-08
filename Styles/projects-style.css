@@ -1,5 +1,46 @@
-#project-title {
-  padding-top: 5%;
+.project-row {
+  padding: 50px 50px 0 50px;
+}
+
+.words {
+  height: auto;
+}
+
+.words-and-image {
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.image-description {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 25px 0;
+}
+
+.project-row p {
   text-align: center;
-  padding-bottom: 5%;
+  font-size: 1.5em;
+}
+
+.project-row img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  box-shadow: 0 0 20px gray;
+}
+
+#project-title {
+  margin: 50px 0 0 0;
+  padding: 10% 0;
+  text-align: center;
+  background: linear-gradient(to bottom right, #FE3828, #FECC00);
+  color: white;
+}
+
+#project-title h1 {
+  font-size: 3.5em;
 }
