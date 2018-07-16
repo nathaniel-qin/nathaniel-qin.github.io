@@ -1,5 +1,5 @@
 .project-row {
-  padding: 50px 50px 0 50px;
+  padding: 5% 7.5% 0 7.5%;
   text-align: center;
 }
 
@@ -22,12 +22,21 @@
 }
 
 .project-row h1 {
-  font-size: 1.75em;
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1.5em;
 }
 
 .project-row p {
-  text-align: center;
-  font-size: 1.5em;
+  font-size: 1.35em;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
 }
 
 .project-row img {
@@ -36,10 +45,11 @@
   margin-right: auto;
   height: 500px;
   box-shadow: 0 0 20px gray;
+  padding: 0;
 }
 
 .project-title {
-  margin-top: 50px;
+  margin-top: 10px;
   height: 400px;
 }
 
