@@ -55,9 +55,13 @@
       <h1>Word of Hands is a prototype of a mobile add-on to popular reviewing applications like Yelp. It incorporates Deaf accessibility features to help those who have accessibility needs and allows them to create and browse this information more easily.
       </h1>
     </div>
+    <div class="affiliation">
+      <h1>AFFILIATED WITH: <b>DESIGN FOR AMERICA</b></h1>
+      <h5>DFA is an interdisciplinary org focused on human-centered design. I definitely need to add more information to describe this more accurately but for now this is all I have and I'm just typing placeholder text.</h5>
+    </div>
     <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="col-lg-5">
-        <img src="../Media/woh_1.png">
+        <img src="../Media/woh/woh_1.png">
       </div>
       <div class="col-lg-7 image-description left-align">
         <p>
@@ -65,19 +69,29 @@
         </p>
       </div>
     </div>
-    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div class="row project-row words-and-image desktop" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="col-lg-7 image-description right-align">
         <p>
           After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the users personal preferences.
         </p>
       </div>
       <div class="col-lg-5">
-        <img src="../Media/woh_2.png">
+        <img src="../Media/woh/woh_2.png">
+      </div>
+    </div>
+    <div class="row project-row words-and-image mobile" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="col-lg-5">
+        <img src="../Media/woh/woh_2.png">
+      </div>
+      <div class="col-lg-7 image-description left-align">
+        <p>
+          After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the users personal preferences.
+        </p>
       </div>
     </div>
     <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="col-lg-5">
-        <img src="../Media/woh_3.png">
+        <img src="../Media/woh/woh_3.png">
       </div>
       <div class="col-lg-7 image-description left-align">
         <p>
@@ -102,5 +116,37 @@ $(document).ready(function() {
   AOS.init({
     duration: 1000
   });
+
+  var vw = $(window).width();
+  var desktops = document.getElementsByClassName('desktop');
+  var mobiles = document.getElementsByClassName('mobile');
+  var needsChange = false;
+  adjustDisplay(vw, desktops, mobiles);
+
+  $(window).resize(function() {
+    var newVW = $(window).width();
+    if((vw >= 992 && newVW < 992) || (newVW >= 992 && vw < 992)) needsChange = true;
+
+    if(needsChange) {
+      adjustDisplay(newVW, desktops, mobiles);
+      vw = newVW;
+      needsChange = false;
+    }
+  })
+
+  function adjustDisplay(width, desktops, mobiles) {
+    var length = desktops.length;
+    if(width >= 992) {
+      for(var i = 0; i < length; i++) {
+        desktops[i].style.display = "flex";
+        mobiles[i].style.display = "none";
+      }
+    } else {
+      for(var i = 0; i < length; i++) {
+        desktops[i].style.display = "none";
+        mobiles[i].style.display = "flex";
+      }
+    }
+  }
 });
 </script>

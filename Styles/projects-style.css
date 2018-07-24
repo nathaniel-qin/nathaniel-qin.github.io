@@ -1,5 +1,11 @@
+.affiliation {
+  padding: 50px 50px;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+}
+
 .project-row {
-  padding: 5% 7.5% 0 7.5%;
+  padding: 40px 50px;
   text-align: center;
 }
 
@@ -54,6 +60,18 @@
 }
 
 #woh-banner {
-  background: url("../Media/woh_banner.png") no-repeat center;
-  background-size: auto;
+  background: url("../Media/woh/woh_banner.png") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 575px) {
+  #woh-banner {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #woh-banner {
+    height: 300px;
+  }
 }
