@@ -57,7 +57,7 @@
     </div>
     <div class="affiliation">
       <h1>AFFILIATED WITH: <b>DESIGN FOR AMERICA</b></h1>
-      <h5>DFA is an interdisciplinary org focused on human-centered design. I definitely need to add more information to describe this more accurately but for now this is all I have and I'm just typing placeholder text.</h5>
+      <h5>DFA is an interdisciplinary organization focused on human-centered design. My team was comprised of students from various backgrounds, united on the common goal of improving accessibility through design.</h5>
     </div>
     <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="col-lg-5">
@@ -69,23 +69,13 @@
         </p>
       </div>
     </div>
-    <div class="row project-row words-and-image desktop" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="col-lg-7 image-description right-align">
-        <p>
-          After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the users personal preferences.
-        </p>
-      </div>
-      <div class="col-lg-5">
+    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="col-lg-5 order-lg-2">
         <img src="../Media/woh/woh_2.png">
       </div>
-    </div>
-    <div class="row project-row words-and-image mobile" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="col-lg-5">
-        <img src="../Media/woh/woh_2.png">
-      </div>
-      <div class="col-lg-7 image-description left-align">
+      <div class="col-lg-7 order-lg-1 image-description right-align">
         <p>
-          After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the users personal preferences.
+          After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the user's personal preferences.
         </p>
       </div>
     </div>
@@ -95,7 +85,17 @@
       </div>
       <div class="col-lg-7 image-description left-align">
         <p>
-          This new page contains information related to accessibility. For the user's quick perusal, each accessibility feature has its own crowdsourced rating. Users can also browse detailed reviews written by other users.
+          This new page contains information related to accessibility. For the user's quick perusal, each accessibility feature has its own crowd-sourced rating. Users can also browse detailed reviews written by other users.
+        </p>
+      </div>
+    </div>
+    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="col-lg-5 order-lg-2">
+        <img src="../Media/woh/woh_4.png">
+      </div>
+      <div class="col-lg-7 order-lg-1 image-description right-align">
+        <p>
+          We opted for a crowd-sourced approach for our reviews, so that users could learn from real experiences that other people before them have had. The goal of this is to be more in-tune with the evolving needs of people within the Deaf community.
         </p>
       </div>
     </div>
@@ -116,37 +116,5 @@ $(document).ready(function() {
   AOS.init({
     duration: 1000
   });
-
-  var vw = $(window).width();
-  var desktops = document.getElementsByClassName('desktop');
-  var mobiles = document.getElementsByClassName('mobile');
-  var needsChange = false;
-  adjustDisplay(vw, desktops, mobiles);
-
-  $(window).resize(function() {
-    var newVW = $(window).width();
-    if((vw >= 992 && newVW < 992) || (newVW >= 992 && vw < 992)) needsChange = true;
-
-    if(needsChange) {
-      adjustDisplay(newVW, desktops, mobiles);
-      vw = newVW;
-      needsChange = false;
-    }
-  })
-
-  function adjustDisplay(width, desktops, mobiles) {
-    var length = desktops.length;
-    if(width >= 992) {
-      for(var i = 0; i < length; i++) {
-        desktops[i].style.display = "flex";
-        mobiles[i].style.display = "none";
-      }
-    } else {
-      for(var i = 0; i < length; i++) {
-        desktops[i].style.display = "none";
-        mobiles[i].style.display = "flex";
-      }
-    }
-  }
 });
 </script>
