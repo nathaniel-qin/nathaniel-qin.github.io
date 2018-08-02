@@ -1,7 +1,10 @@
 .affiliation {
   padding: 50px 50px;
   text-align: center;
-  background-color: rgb(230, 230, 230);
+  background-color: #0e2c5e;
+  color: white;
+  box-shadow: 0 0 20px gray;
+  border-radius: 5px;
 }
 
 .project-row {
@@ -27,14 +30,22 @@
   padding: 25px 0;
 }
 
-.project-row h1 {
+.project-row h1, .affiliation h1 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+.project-row h2, .affiliation h2 {
   font-weight: 300;
-  font-size: 1.6em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  padding-left: 100px;
+  text-align: left;
 }
 
 .project-row p {
-  font-size: 1.35em;
+  font-size: 1.5em;
 }
 
 .left-align {
@@ -55,8 +66,8 @@
 }
 
 .project-title {
-  margin-top: 10px;
-  height: 400px;
+  margin-top: 30px;
+  height: 350px;
 }
 
 #woh-banner {
