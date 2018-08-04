@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../Scripts/jquery.color.min.js"></script>
   <script src="../Scripts/nav.min.js"></script>
+  <script src="../Scripts/side-nav.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -49,61 +50,72 @@
     </nav>
   </div>
   <div class="container-fluid" id="content">
-    <div class="project-title" id="woh-banner">
-    </div>
-    <div class="project-row words">
-      <h1>AT A GLANCE \\</h1>
-      <hr>
-      <h2>Word of Hands is a prototype of a mobile add-on to popular reviewing applications like Yelp. It incorporates Deaf accessibility features to help those who have accessibility needs and allows them to create and browse this information more easily.
-      </h2>
-    </div>
-    <div class="affiliation" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <h1>AFFILIATION \\ <b>DESIGN FOR AMERICA</b></h1>
-      <hr>
-      <h2>DFA is an interdisciplinary organization focused on human-centered design. My team was comprised of students from various backgrounds, united on the common goal of improving accessibility through design.</h2>
-    </div>
-    <div class="row project-row words" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <p>Our initial goal was some sort of design solution that would help tackle the issue of accessibility. Throughout the year, we conducted research and interviews to solidify our own understanding of the issue. In the end, we found that existing platforms for accessibility ratings are outdated, poorly designed, and obsolete.
-      </p>
-    </div>
-    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="col-lg-5">
-        <img src="../Media/woh/woh_1.png">
-      </div>
-      <div class="col-lg-7 image-description left-align">
-        <p>
-          Users begin by creating a personalized profile in our app, detailing their own accessibility preferences. These criteria were carefully selected after multiple interviews with people from the Deaf community.
-        </p>
-      </div>
-    </div>
-    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="col-lg-5 order-lg-2">
-        <img src="../Media/woh/woh_2.png">
-      </div>
-      <div class="col-lg-7 order-lg-1 image-description right-align">
-        <p>
-          After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the user's personal preferences.
-        </p>
-      </div>
-    </div>
-    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="col-lg-5">
-        <img src="../Media/woh/woh_3.png">
-      </div>
-      <div class="col-lg-7 image-description left-align">
-        <p>
-          This new page contains information related to accessibility. For the user's quick perusal, each accessibility feature has its own crowd-sourced rating. Users can also browse detailed reviews written by other users.
-        </p>
-      </div>
-    </div>
-    <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="col-lg-5 order-lg-2">
-        <img src="../Media/woh/woh_4.png">
-      </div>
-      <div class="col-lg-7 order-lg-1 image-description right-align">
-        <p>
-          We opted for a crowd-sourced approach for our reviews, so that users could learn from real experiences that other people before them have had. The goal of this is to be more in-sync with the Deaf community as their needs evolve.
-        </p>
+    <div class="row">
+      <nav class="col-lg-3" style="border-bottom: none !important;">
+        <div class="sticky-top side-nav">
+          <h3>projects \\</h3>
+          <h4 class="side-nav-opt active">word of hands</h4>
+          <h4 class="side-nav-opt">carpool</h4>
+        </div>
+      </nav>
+      <div class="col-lg-9">
+        <div class="project-title" id="woh-banner">
+        </div>
+        <div class="project-row words">
+          <h1>AT A GLANCE \\</h1>
+          <hr>
+          <h2>Word of Hands is a prototype of a mobile add-on to popular reviewing applications like Yelp. It incorporates Deaf accessibility features to help those who have accessibility needs and allows them to create and browse this information more easily.
+          </h2>
+        </div>
+        <div class="affiliation" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1>AFFILIATION \\ <b>DESIGN FOR AMERICA</b></h1>
+          <hr>
+          <h2>DFA is an interdisciplinary organization focused on human-centered design. My team was comprised of students from various backgrounds, united on the common goal of improving accessibility through design.</h2>
+        </div>
+        <div class="row project-row words" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <p>Our initial goal was some sort of design solution that would help tackle the issue of accessibility. Throughout the year, we conducted research and interviews to solidify our own understanding of the issue. In the end, we found that existing platforms for accessibility ratings are outdated, poorly designed, and obsolete.
+          </p>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="col-lg-auto">
+            <img src="../Media/woh/woh_1.png">
+          </div>
+          <div class="col-lg-7 image-description left-align">
+            <p>
+              Users begin by creating a personalized profile in our app, detailing their own accessibility preferences. These criteria were carefully selected after multiple interviews with people from the Deaf community.
+            </p>
+          </div>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="col-lg-auto order-lg-2">
+            <img src="../Media/woh/woh_2.png">
+          </div>
+          <div class="col-lg-7 order-lg-1 image-description right-align">
+            <p>
+              After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the user's personal preferences.
+            </p>
+          </div>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="col-lg-auto">
+            <img src="../Media/woh/woh_3.png">
+          </div>
+          <div class="col-lg-7 image-description left-align">
+            <p>
+              This new page contains information related to accessibility. For the user's quick perusal, each accessibility feature has its own crowd-sourced rating. Users can also browse detailed reviews written by other users.
+            </p>
+          </div>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="col-lg-auto order-lg-2">
+            <img src="../Media/woh/woh_4.png">
+          </div>
+          <div class="col-lg-7 order-lg-1 image-description right-align">
+            <p>
+              We opted for a crowd-sourced approach for our reviews, so that users could learn from real experiences that other people before them have had. The goal of this is to be more in-sync with the Deaf community as their needs evolve.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

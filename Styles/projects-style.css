@@ -17,7 +17,7 @@
 }
 
 .words-and-image {
-  height: 100%;
+  height: auto;
 }
 
 .image {
@@ -27,7 +27,7 @@
 .image-description {
   margin-top: auto;
   margin-bottom: auto;
-  padding: 25px 0;
+  padding: 25px 25px;
 }
 
 .project-row h1, .affiliation h1 {
@@ -68,6 +68,39 @@
 .project-title {
   margin-top: 30px;
   height: 350px;
+}
+
+.side-nav {
+  margin-top: 30px;
+  padding: 20px 10px;
+  border-right: 2px solid lightgray;
+  height: 100vh;
+}
+
+.side-nav h3 {
+  padding: 7px 15px 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid lightgray;
+  box-shadow: 0 4px 5px lightgray;
+  color: black;
+}
+
+.side-nav-opt {
+  font-family: 'Nunito Sans', sans-serif;
+  text-indent: 30px;
+  padding: 10px 0;
+  margin: 0;
+  color: rgb(111, 111, 111);
+}
+
+.side-nav-opt:hover {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 600;
+  color: black;
 }
 
 #woh-banner {
