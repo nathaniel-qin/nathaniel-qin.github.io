@@ -63,6 +63,16 @@
     <div class="container-fluid" id="projects-section">
       <div class="row">
         <div class="col-lg-6">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="klema_box">
+            <div class="col-4 project-image" id="klema"></div>
+            <div class="col-8 project-words">
+              <h4>Klema</h4>
+              <p>social media network to connect missionaries and their supporters</p>
+              <p class="read-more">see more >></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
           <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="woh_box">
             <div class="col-4 project-image" id="word-of-hands"></div>
             <div class="col-8 project-words">
@@ -72,34 +82,24 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
         <div class="col-lg-6">
           <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="car_box">
             <div class="col-4 project-image" id="carpool"></div>
             <div class="col-8 project-words">
-              <h4>Carpool Puzzles</h4>
+              <h4>Carpool</h4>
               <p>web application for college fellowship carpool ministry with riddles and puzzles</p>
               <p class="read-more">see more >></p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-lg-6">
           <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="ss_box">
             <div class="col-4 project-image" id="simply-snap"></div>
             <div class="col-8 project-words">
               <h4>Simply Snap</h4>
               <p>web application prototype to facilitate digitization of various contents</p>
-              <p class="read-more">see more >></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6" onclick="#">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="bc_box">
-            <div class="col-4 project-image" id="battlecode"></div>
-            <div class="col-8 project-words">
-              <h4>Battlecode 2018</h4>
-              <p>MIT coding competition focused on programming successful gaming strategies</p>
               <p class="read-more">see more >></p>
             </div>
           </div>
@@ -124,10 +124,17 @@ $(document).ready(function() {
     duration: 750
   });
 
+  var $kBox = $("#klema_box");
   var $wohBox = $("#woh_box");
   var $carBox = $("#car_box");
   var $ssBox = $("#ss_box");
-  var $bcBox = $("#bc_box");
+
+  $kBox.on("click", function() {
+    window.location.href = "Projects/klema.html";
+  });
+  $kBox.on("mouseover", function() {
+    $bcBox.css("cursor", "pointer");
+  });
 
   $wohBox.on("click", function() {
     window.location.href = "Projects/word_of_hands.html";
@@ -148,13 +155,6 @@ $(document).ready(function() {
   });
   $ssBox.on("mouseover", function() {
     $ssBox.css("cursor", "pointer");
-  });
-
-  $bcBox.on("click", function() {
-    window.location.href = "Projects/battlecode.html";
-  });
-  $bcBox.on("mouseover", function() {
-    $bcBox.css("cursor", "pointer");
   });
 
 });

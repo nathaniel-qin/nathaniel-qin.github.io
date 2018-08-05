@@ -69,6 +69,11 @@
 @media screen and (min-width: 992px) {
 }
 
+#klema {
+  background-image: url("../Media/klema.png");
+}
+
+
 #word-of-hands {
   background-image: url("../Media/woh/word_of_hands.png");
 }
@@ -79,10 +84,6 @@
 
 #simply-snap {
   background-image: url("../Media/simply_snap.png");
-}
-
-#battlecode {
-  background-image: url("../Media/battlecode.png");
 }
 
 .project-words {
