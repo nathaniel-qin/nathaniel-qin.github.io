@@ -87,14 +87,24 @@
     height: 300px;
   }
 
-  .project-row, .affiliation {
+  .project-row {
+    font-size: 0.75em;
+    padding: 30px 20px 0 20px;
+  }
+
+  .affiliation {
     font-size: 0.8em;
+    padding: 30px 30px;
   }
 
   .project-row h2, .affiliation h2 {
     padding-left: 0;
     padding-top: 10px;
     text-indent: 24px;
+  }
+
+  .project-row img {
+    height: 400px;
   }
 
   .left-align, .right-align {
