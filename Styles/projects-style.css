@@ -71,6 +71,10 @@
   height: 350px;
 }
 
+#project-content {
+  padding-left: 0;
+}
+
 #woh-banner {
   background: url("../Media/woh/woh_banner.png") no-repeat center;
   background-size: cover;
@@ -119,5 +123,9 @@
 @media screen and (max-width: 991px) {
   .project-title {
     margin-top: 0;
+  }
+
+  #project-content {
+    padding-left: 15px;
   }
 }
