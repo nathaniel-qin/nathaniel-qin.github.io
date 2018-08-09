@@ -7,7 +7,27 @@ $(document).ready(function() {
 
     if (w > 767) {
       $("#navbar-content").collapse("hide");
-      $("#content").css({"backgroundColor": "white", "opacity": "1"});
+      $("#content").css({
+        "backgroundColor": "transparent",
+        "opacity": "1",
+        "pointer-events": "all"
+      });
+      $(".side-nav").css({
+        "backgroundColor": "transparent",
+        "opacity": "1"
+      });
+      $("#footer").css({
+        "backgroundColor": "transparent",
+        "opacity": "1"
+      });
+      $("hr").css({
+        "backgroundColor": "transparent",
+        "opacity": "1"
+      });
+      $("body").css({
+        "overflow": "auto",
+        "position": "relative"
+      });
     }
   });
 
@@ -38,7 +58,14 @@ $(document).ready(function() {
         backgroundColor: "rgb(235, 235, 235)",
         opacity: "0.6"
       }, 200);
-      $("body").css("overflow", "hidden");
+      $("hr").animate({
+        backgroundColor: "rgb(235, 235, 235)",
+        opacity: "0.6"
+      });
+      $("body").css({
+        "overflow": "hidden",
+        "position": "fixed"
+      });
       $("#content").css("pointer-events", "none");
     } else {
       $("#content").animate({
@@ -52,7 +79,14 @@ $(document).ready(function() {
         backgroundColor: "transparent",
         opacity: "1"
       }, 200);
-      $("body").css("overflow", "auto");
+      $("hr").animate({
+        backgroundColor: "transparent",
+        opacity: "1"
+      });
+      $("body").css({
+        "overflow": "auto",
+        "position": "relative"
+      });
       $("#content").css("pointer-events", "all");
     }
   });
