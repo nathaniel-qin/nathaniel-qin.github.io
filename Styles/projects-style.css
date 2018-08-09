@@ -5,10 +5,11 @@
   color: white;
   box-shadow: 0 0 20px gray;
   border-radius: 5px;
+  margin-top: 40px;
 }
 
 .project-row {
-  padding: 40px 50px;
+  padding: 40px 50px 0 50px;
   text-align: center;
 }
 
@@ -84,6 +85,24 @@
 @media screen and (max-width: 767px) {
   #woh-banner {
     height: 300px;
+  }
+
+  .project-row, .affiliation {
+    font-size: 0.8em;
+  }
+
+  .project-row h2, .affiliation h2 {
+    padding-left: 0;
+    padding-top: 10px;
+    text-indent: 24px;
+  }
+
+  .left-align, .right-align {
+    text-align: center;
+  }
+
+  .image-description {
+    border-bottom: 2px solid lightgray;
   }
 }
 
