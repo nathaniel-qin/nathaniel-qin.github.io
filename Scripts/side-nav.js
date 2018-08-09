@@ -7,7 +7,7 @@ $(document).ready(function() {
       }, 175);
     }, function() {
       $(this).stop(true).animate({
-        backgroundColor: "white"
+        backgroundColor: "transparent"
       }, 175);
     }
   );

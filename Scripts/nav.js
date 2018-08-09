@@ -37,19 +37,23 @@ $(document).ready(function() {
       $("#footer").animate({
         backgroundColor: "rgb(235, 235, 235)",
         opacity: "0.6"
-      });
+      }, 200);
+      $("body").css("overflow", "hidden");
+      $("#content").css("pointer-events", "none");
     } else {
       $("#content").animate({
-        backgroundColor: "white",
+        backgroundColor: "transparent",
         opacity: "1"
       }, 200);
       $(".side-nav").animate({
-        backgroundColor: "white"
+        backgroundColor: "transparent"
       }, 200);
       $("#footer").animate({
-        backgroundColor: "white",
+        backgroundColor: "transparent",
         opacity: "1"
-      });
+      }, 200);
+      $("body").css("overflow", "auto");
+      $("#content").css("pointer-events", "all");
     }
   });
 });
