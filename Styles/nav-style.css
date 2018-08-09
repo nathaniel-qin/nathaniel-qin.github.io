@@ -61,7 +61,6 @@
 }
 
 @media screen and (max-width: 991px) {
-
   .side-nav-options {
     overflow: auto;
     height: 44px;
@@ -73,7 +72,7 @@
     height: unset;
     border-right: none;
     display: flex;
-    border-bottom: 2px solid lightgray;
+    box-shadow: 0 5px 6px gray;
     padding-bottom: 0;
   }
 
