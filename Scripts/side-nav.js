@@ -12,4 +12,13 @@ $(document).ready(function() {
     }
   );
 
+  $(window).on("resize", function () {
+    var w = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (w > 991) {
+      $("#side-navbar-content").collapse("hide");
+    }
+  });
 });

@@ -5,7 +5,7 @@ $(document).ready(function() {
       || document.documentElement.clientWidth
       || document.body.clientWidth;
 
-    if (w > 768) {
+    if (w > 767) {
       $("#navbar-content").collapse("hide");
       $("#content").css({"backgroundColor": "white", "opacity": "1"});
     }
