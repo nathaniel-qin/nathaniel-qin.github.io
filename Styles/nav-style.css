@@ -67,7 +67,7 @@
   color: black;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
 
   .side-nav-options {
     margin-left: 16px;

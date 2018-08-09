@@ -75,6 +75,12 @@
   background-size: cover;
 }
 
+@media screen and (min-width: 992px) {
+  #project-content {
+    padding-left: 15px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   #woh-banner {
     height: 200px;
@@ -87,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .project-title {
     margin-top: 0;
   }
