@@ -90,7 +90,7 @@
     margin: 0;
     padding: 10px 0;
     font-size: 1.1em;
-    width: 125px;
+    min-width: 100px;
     text-align: center;
   }
 
