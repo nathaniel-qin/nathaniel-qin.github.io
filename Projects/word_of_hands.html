@@ -52,10 +52,10 @@
   <div class="container-fluid" id="content">
     <div class="row">
       <nav class="col-lg-3 sticky-top" style="border-bottom: none !important;">
-        <div class="row sticky-top side-nav navbar-expand-lg navbar-light" id="side-nav-div">
+        <div class="sticky-top side-nav navbar-expand-lg navbar-light" id="side-nav-div">
           <div class="col">
             <a class="navbar-brand" href="#" id="side-nav-title-link">
-              <h3 class="col-12" id="side-nav-title">word of hands</h3>
+              <h3 class="col-12" id="side-nav-title"></h3>
             </a>
             <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse" data-target="#side-navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation" id="side-nav-toggle-border">
               <span class="navbar-toggler-icon" id="side-nav-toggle"></span>
@@ -170,10 +170,14 @@ $(document).ready(function() {
   var sideNavTitle = document.getElementById("side-nav-title");
   var sideNavTitleLink = document.getElementById("side-nav-title-link");
 
-  if(w > 991) {
+  if(w < 992) {
+    $sideNav.addClass("row");
+    sideNavTitle.innerHTML = "word of hands";
+    sideNavTitleLink.setAttribute("href", "../index.html");
+  } else {
     $sideNav.removeClass("row");
     sideNavTitle.innerHTML = "projects";
-    sideNavTitleLink.setAttribute("href", "../index.html");
+    sideNavTitleLink.setAttribute("href", "#");
   }
 
   $(window).on("resize", function () {
