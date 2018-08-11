@@ -41,6 +41,10 @@ hr {
   margin-right: 15px;
 }
 
+.footer-divider {
+  margin-top: 60px;
+}
+
 footer {
   margin-top: 0;
   text-align: center;
