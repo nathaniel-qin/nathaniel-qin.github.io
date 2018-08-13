@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.technologies {
+  padding: 10px 50px;
+}
+
 .words {
   height: auto;
 }
@@ -97,11 +101,20 @@
 
 .tech-desc h3 {
   font-size: 1.5em;
+  line-height: 1.75em;
 }
 
 .tech-desc p {
   font-size: 1em;
+  line-height: 0.5em;
+}
 
+.proficient {
+  color: #159d37;
+}
+
+.familiar {
+  color: #3487cb;
 }
 
 #project-content {
