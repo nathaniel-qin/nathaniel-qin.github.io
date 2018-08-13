@@ -76,7 +76,8 @@
 }
 
 .technology {
-  box-shadow: 0 0 5px gray;
+  box-shadow: 0 0 5px 1px gray;
+  border-radius: 2px;
   padding: 16px;
   margin: 10px;
 }
