@@ -127,6 +127,11 @@
   background-size: cover;
 }
 
+#carpool-banner {
+  background: url("../Media/carpool/car_banner.png") no-repeat center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 575px) {
   #woh-banner {
     height: 200px;
@@ -175,6 +180,10 @@
 @media screen and (max-width: 991px) {
   .project-title {
     margin-top: 10px;
+  }
+
+  .project-title {
+    height: 300px;
   }
 
   #project-content {

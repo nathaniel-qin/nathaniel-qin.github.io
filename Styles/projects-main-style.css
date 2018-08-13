@@ -78,11 +78,11 @@
 }
 
 #carpool {
-  background-image: url("../Media/carpool.png");
+  background-image: url("../Media/carpool/carpool.png");
 }
 
 #simply-snap {
-  background-image: url("../Media/simply_snap.png");
+  background-image: url("../Media/snap/simply_snap.png");
 }
 
 .project-words {

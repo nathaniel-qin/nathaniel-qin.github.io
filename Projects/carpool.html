@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title>nathaniel qin</title>
+  <title>nathaniel qin - carpool</title>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,12 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../Scripts/jquery.color.min.js"></script>
-  <script src="../Scripts/nav.min.js"></script>
+  <script src="../Scripts/nav.js"></script>
+  <script src="../Scripts/side-nav.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="../Styles/style.css">
   <link rel="stylesheet" href="../Styles/nav-style.css">
   <link rel="stylesheet" href="../Styles/projects-style.css">
@@ -27,8 +30,8 @@
         <a href="../index.html" class="navbar-brand" id="logo">
           <img src="../Media/icons/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
         </a>
-        <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler collapse-button" id="main-collapse-button" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="main-nav-toggle"></span>
         </button>
       </div>
       <div class="col collapse navbar-collapse" id="navbar-content">
@@ -46,15 +49,179 @@
       </div>
     </nav>
   </div>
-  <div class="container-fluid">
-    <h1 id="project-title">Carpool Puzzles</h1>
+  <div class="container-fluid" id="content">
+    <div class="row">
+      <nav class="col-lg-3 sticky-top" style="border-bottom: none !important;">
+        <div class="sticky-top side-nav navbar-expand-lg navbar-light" id="side-nav-div">
+          <div class="col">
+            <a class="navbar-brand" href="#" id="side-nav-title-link">
+              <h3 class="col-12" id="side-nav-title"></h3>
+            </a>
+            <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse" data-target="#side-navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation" id="side-nav-toggle-border">
+              <span class="navbar-toggler-icon" id="side-nav-toggle"></span>
+            </button>
+          </div>
+          <div class="col collapse navbar-collapse" id="side-navbar-content">
+            <div class="row">
+              <a class="col-6 col-sm-3 col-lg-12" href="klema.html">
+                <h4 class="side-nav-opt">klema.io</h4>
+              </a>
+              <a class="col-6 col-sm-3 col-lg-12" href="word_of_hands.html">
+                <h4 class="side-nav-opt">word of hands</h4>
+              </a>
+              <a class="col-6 col-sm-3 col-lg-12" href="#">
+                <h4 class="side-nav-opt active">carpool</h4>
+              </a>
+              <a class="col-6 col-sm-3 col-lg-12" href="simply_snap.html">
+                <h4 class="side-nav-opt">simply snap</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="col-lg-9" id="project-content">
+        <div class="project-title" id="carpool-banner">
+        </div>
+        <div class="project-row words">
+          <h1>AT A GLANCE \\</h1>
+          <hr>
+          <h2>Word of Hands is a prototype of a mobile add-on to popular reviewing applications like Yelp. It provides the ability to rate and review Deaf accessibility features so that people with these needs can peruse the information more easily.
+          </h2>
+        </div>
+        <div class="affiliation" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1>AFFILIATION \\ <b>DESIGN FOR AMERICA</b></h1>
+          <hr>
+          <h2>DFA is an interdisciplinary organization focused on human-centered design. My team was comprised of students from various backgrounds, united on the common goal of improving accessibility through design.</h2>
+        </div>
+        <div class="project-row words" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1>DESIGN GOALS \\</h1>
+          <hr>
+          <h2>Our initial goal was some sort of design solution that would help tackle the issue of accessibility. Throughout the year, we conducted research and interviews to solidify our own understanding of the issue. In the end, we found that existing platforms for accessibility ratings are outdated, poorly designed, and obsolete.
+          </h2>
+        </div>
+        <div class="project-row words" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1>SCREENS \\</h1>
+          <hr>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="col-md">
+            <img src="../Media/woh/woh_1.png">
+          </div>
+          <div class="col-md image-description left-align">
+            <p>
+              Users begin by creating a personalized profile in our app, detailing their own accessibility preferences. These criteria were carefully selected after multiple interviews with people involved with the Deaf community.
+            </p>
+          </div>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="col-md order-md-2">
+            <img src="../Media/woh/woh_2.png">
+          </div>
+          <div class="col-md order-md-1 image-description right-align">
+            <p>
+              After syncing with a review app such as Yelp, our icon appears next to search results. The vibrance of the icon represents the level of accommodation the business has in relation to the user's personal preferences.
+            </p>
+          </div>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="col-md">
+            <img src="../Media/woh/woh_3.png">
+          </div>
+          <div class="col-md image-description left-align">
+            <p>
+              This new page contains information related to accessibility. For the user's quick perusal, each accessibility feature has its own crowd-sourced rating. Users can also browse detailed reviews written by other users.
+            </p>
+          </div>
+        </div>
+        <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="col-md order-md-2">
+            <img src="../Media/woh/woh_4.png">
+          </div>
+          <div class="col-md order-md-1 image-description right-align">
+            <p>
+              We opted for a crowd-sourced approach for our reviews, so that users could learn from real experiences that other people before them have had. The goal of this is to be more in-sync with the Deaf community as their needs evolve.
+            </p>
+          </div>
+        </div>
+        <div class="project-row words" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1>TECHNOLOGIES \\</h1>
+          <hr>
+        </div>
+        <div class="row technologies">
+          <div class="col-12 col-sm-6">
+            <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div class="col-4 tech-icon">
+                <img src="../Media/icons/sketch.png">
+              </div>
+              <div class="col-8 tech-desc">
+                <h3>Sketch</h3>
+                <p class="proficient">proficient</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div class="col-4 tech-icon">
+                <img src="../Media/icons/figma.png">
+              </div>
+              <div class="col-8 tech-desc">
+                <h3>Figma</h3>
+                <p class="familiar">familiar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
   </div>
-  <hr>
 
   <!--footer-->
-  <footer>
+  <footer id="footer">
     <p>Developed by Nathaniel Qin 2018</p>
     <p>Find me on <a href="https://www.linkedin.com/in/nathaniel-qin"><span style="font-weight: 400;">LinkedIn</span></a> and <a href="https://github.com/nathaniel-qin"><span style="font-weight: 400;">GitHub</span></a></p>
   </footer>
 </body>
 </html>
+
+<script>
+$(document).ready(function() {
+
+  AOS.init({
+    duration: 1000
+  });
+
+  var w = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+  var $sideNav = $("#side-nav-div");
+  var sideNavTitle = document.getElementById("side-nav-title");
+  var sideNavTitleLink = document.getElementById("side-nav-title-link");
+
+  if(w < 992) {
+    $sideNav.addClass("row");
+    sideNavTitle.innerHTML = "word of hands";
+    sideNavTitleLink.setAttribute("href", "../index.html");
+  } else {
+    $sideNav.removeClass("row");
+    sideNavTitle.innerHTML = "projects";
+    sideNavTitleLink.setAttribute("href", "#");
+  }
+
+  $(window).on("resize", function () {
+    w = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (w > 991) {
+      $sideNav.removeClass("row");
+      sideNavTitle.innerHTML = "projects";
+      sideNavTitleLink.setAttribute("href", "../index.html");
+    } else {
+      $sideNav.addClass("row");
+      sideNavTitle.innerHTML = "carpool";
+      sideNavTitleLink.setAttribute("href", "#");
+    }
+  });
+});
+</script>
