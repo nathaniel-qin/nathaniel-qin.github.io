@@ -201,11 +201,11 @@ $(document).ready(function() {
   if(w < 992) {
     $sideNav.addClass("row");
     sideNavTitle.innerHTML = "word of hands";
-    sideNavTitleLink.setAttribute("href", "../index.html");
+    sideNavTitleLink.setAttribute("href", "#");
   } else {
     $sideNav.removeClass("row");
     sideNavTitle.innerHTML = "projects";
-    sideNavTitleLink.setAttribute("href", "#");
+    sideNavTitleLink.setAttribute("href", "../index.html");
   }
 
   $(window).on("resize", function () {

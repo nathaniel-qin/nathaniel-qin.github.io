@@ -140,6 +140,11 @@ p.project-link {
   background-size: cover;
 }
 
+#klema-banner {
+  background: url("../Media/klema/klema_banner.png") no-repeat center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 575px) {
   #woh-banner {
     height: 200px;
