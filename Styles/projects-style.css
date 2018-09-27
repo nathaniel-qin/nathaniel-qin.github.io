@@ -49,6 +49,15 @@
   text-align: left;
 }
 
+.project-row li {
+  margin-left: 90px;
+  text-align: left;
+}
+
+.project-row li p {
+  margin-bottom: 10px;
+}
+
 .project-row p {
   font-size: 1.4em;
 }
@@ -187,6 +196,10 @@ p.project-link {
     padding-left: 0;
     padding-top: 10px;
     text-indent: 24px;
+  }
+
+  .project-row li {
+    margin-left: 0;
   }
 
   .project-row .col-md img {
