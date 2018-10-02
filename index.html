@@ -63,7 +63,7 @@
     <div class="container-fluid" id="projects-section">
       <div class="row">
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="klema_box">
+          <div class="row project" id="klema_box">
             <div class="col-4 project-image" id="klema"></div>
             <div class="col-8 project-words">
               <h4>Klema.io</h4>
@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="woh_box">
+          <div class="row project" id="woh_box">
             <div class="col-4 project-image" id="word-of-hands"></div>
             <div class="col-8 project-words">
               <h4>Word of Hands</h4>
@@ -85,7 +85,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="car_box">
+          <div class="row project" id="car_box">
             <div class="col-4 project-image" id="carpool"></div>
             <div class="col-8 project-words">
               <h4>Carpool</h4>
@@ -109,10 +109,6 @@
 
 <script>
 $(document).ready(function() {
-
-  AOS.init({
-    duration: 750
-  });
 
   var $kBox = $("#klema_box");
   var $wohBox = $("#woh_box");
