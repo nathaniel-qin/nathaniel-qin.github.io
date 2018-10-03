@@ -81,10 +81,6 @@
   background-image: url("../Media/carpool/carpool.png");
 }
 
-#simply-snap {
-  background-image: url("../Media/snap/simply_snap.png");
-}
-
 .project-words {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -105,8 +101,8 @@
   right: 20px;
 }
 
-#intro {
-  padding-top: 5%;
+#projects-section {
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 767px) {
@@ -139,8 +135,4 @@
     text-align: left;
     font-size: 2.25em;
   }
-}
-
-#projects-section {
-  margin-top: 7.5%;
 }

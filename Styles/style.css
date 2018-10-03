@@ -33,6 +33,7 @@ nav {
   font-family: 'Alegreya', serif;
   border-bottom: 3.5px dotted rgb(220, 220, 220);
   background-color: white;
+  padding: 4px 0;
 }
 
 hr {
