@@ -7,9 +7,18 @@ $(document).ready(function() {
       }, 175);
     }, function() {
       $(this).stop(true).animate({
-        backgroundColor: "white"
+        backgroundColor: "transparent"
       }, 175);
     }
   );
 
+  $(window).on("resize", function () {
+    var w = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (w > 991) {
+      $("#side-navbar-content").collapse("hide");
+    }
+  });
 });

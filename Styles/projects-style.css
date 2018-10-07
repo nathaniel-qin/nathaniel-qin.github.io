@@ -5,11 +5,16 @@
   color: white;
   box-shadow: 0 0 20px gray;
   border-radius: 5px;
+  margin-top: 40px;
 }
 
 .project-row {
-  padding: 40px 50px;
+  padding: 40px 50px 0 50px;
   text-align: center;
+}
+
+.technologies {
+  padding: 10px 50px;
 }
 
 .words {
@@ -44,8 +49,17 @@
   text-align: left;
 }
 
+.project-row li {
+  margin-left: 90px;
+  text-align: left;
+}
+
+.project-row li p {
+  margin-bottom: 10px;
+}
+
 .project-row p {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .left-align {
@@ -56,7 +70,15 @@
   text-align: right;
 }
 
-.project-row img {
+p.project-link {
+  padding-left: 100px;
+  text-align: left;
+  color: rgb(100, 100, 200);
+  text-decoration: underline;
+  font-size: 1.75em;
+}
+
+.project-row .col-md img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,13 +87,87 @@
   padding: 0;
 }
 
+.project-row .col-md-7 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  box-shadow: 0 0 20px gray;
+  padding: 0;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.project-row .col-md, .project-row .col-md-7 {
+  display: flex;
+  align-items: center;
+}
+
 .project-title {
   margin-top: 30px;
   height: 350px;
 }
 
+.technology {
+  box-shadow: 0 0 5px 1px gray;
+  border-radius: 2px;
+  padding: 16px;
+  margin: 10px;
+}
+
+.tech-icon {
+  display: flex;
+}
+
+.tech-icon img {
+  align-self: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.tech-desc {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tech-desc h3 {
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+
+.tech-desc p {
+  font-size: 1em;
+  line-height: 0.5em;
+}
+
+.proficient {
+  color: #159d37;
+}
+
+.familiar {
+  color: #3487cb;
+}
+
+#project-content {
+  padding-left: 0;
+}
+
 #woh-banner {
   background: url("../Media/woh/woh_banner.png") no-repeat center;
+  background-size: cover;
+}
+
+#carpool-banner {
+  background: url("../Media/carpool/car_banner.png") no-repeat center;
+  background-size: cover;
+}
+
+#klema-banner {
+  background: url("../Media/klema/klema_banner.png") no-repeat center;
   background-size: cover;
 }
 
@@ -85,10 +181,67 @@
   #woh-banner {
     height: 300px;
   }
+
+  .project-row {
+    font-size: 0.75em;
+    padding: 30px 20px 0 20px;
+  }
+
+  .affiliation {
+    font-size: 0.8em;
+    padding: 30px 30px;
+  }
+
+  .project-row h2, .affiliation h2 {
+    padding-left: 0;
+    padding-top: 10px;
+    text-indent: 24px;
+  }
+
+  .project-row li {
+    margin-left: 0;
+  }
+
+  .project-row .col-md img {
+    height: 400px;
+  }
+
+  p.project-link {
+    padding-left: 0;
+  }
+
+  .left-align, .right-align {
+    text-align: center;
+  }
+
+  .image-description {
+    border-bottom: 2px solid lightgray;
+  }
+
+  .technology {
+    padding: 4px;
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .project-title {
+    margin-top: 10px;
+    height: 300px;
+  }
+
+  #project-content {
+    padding-left: 15px;
+  }
+
+  .technology {
+    padding: 8px;
+    margin: 8px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
-  .project-title {
-    margin-top: 0;
+  .project-row p {
+    font-size: 1.25em;
   }
 }

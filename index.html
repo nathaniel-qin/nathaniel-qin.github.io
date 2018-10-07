@@ -18,36 +18,16 @@
   <link rel="stylesheet" href="Styles/style.css">
   <link rel="stylesheet" href="Styles/nav-style.css">
   <link rel="stylesheet" href="Styles/projects-main-style.css">
-  <link rel="icon" href="Media/icon-white.png">
+  <link rel="icon" href="Media/icons/icon-white.png">
 </head>
 
 <body>
   <!--nav bar-->
-  <div class="container-fluid">
-    <nav class="row no-gutters sticky-top navbar-expand-md navbar-light">
-      <div class="col-md-6">
-        <a href="index.html" class="navbar-brand" id="logo">
-          <img src="Media/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
-        </a>
-        <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="col collapse navbar-collapse" id="navbar-content">
-        <div class="col row no-gutters">
-          <div class="col">
-            <a href="index.html" class="nav-link nav-option"><span class="active-text">projects</a>
-          </div>
-          <div class="col">
-            <a href="about.html" class="nav-link nav-option">about</a>
-          </div>
-          <div class="col">
-            <a href="contact.html" class="nav-link nav-option">contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <nav>
+    <a href="index.html" id="logo">
+      <img src="Media/icons/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
+    </a>
+  </nav>
   <!--content-->
   <div id="content">
     <div class="container-fluid" id="intro">
@@ -56,14 +36,14 @@
           <h1>hi, i'm<br>nathaniel.</h1>
         </div>
         <div class="col-md-6 col-sm-10 col-11">
-          <h2>aspiring <br>UX designer // <br>front-end developer</h2>
+          <h2>aspiring<br>UX designer //<br>front-end developer</h2>
         </div>
       </div>
     </div>
     <div class="container-fluid" id="projects-section">
       <div class="row">
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="klema_box">
+          <div class="row project" id="klema_box">
             <div class="col-4 project-image" id="klema"></div>
             <div class="col-8 project-words">
               <h4>Klema.io</h4>
@@ -73,7 +53,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="woh_box">
+          <div class="row project" id="woh_box">
             <div class="col-4 project-image" id="word-of-hands"></div>
             <div class="col-8 project-words">
               <h4>Word of Hands</h4>
@@ -85,7 +65,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="car_box">
+          <div class="row project" id="car_box">
             <div class="col-4 project-image" id="carpool"></div>
             <div class="col-8 project-words">
               <h4>Carpool</h4>
@@ -94,21 +74,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row project" id="ss_box">
-            <div class="col-4 project-image" id="simply-snap"></div>
-            <div class="col-8 project-words">
-              <h4>Simply Snap</h4>
-              <p>web application prototype to facilitate digitization of various contents</p>
-              <p class="read-more">see more >></p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+    <hr class="footer-divider">
   </div>
-  <hr>
-
   <!--footer-->
   <footer>
     <p>Developed by Nathaniel Qin 2018</p>
@@ -119,10 +88,6 @@
 
 <script>
 $(document).ready(function() {
-
-  AOS.init({
-    duration: 750
-  });
 
   var $kBox = $("#klema_box");
   var $wohBox = $("#woh_box");
@@ -148,13 +113,6 @@ $(document).ready(function() {
   });
   $carBox.on("mouseover", function() {
     $carBox.css("cursor", "pointer");
-  });
-
-  $ssBox.on("click", function() {
-    window.location.href = "Projects/simply_snap.html";
-  });
-  $ssBox.on("mouseover", function() {
-    $ssBox.css("cursor", "pointer");
   });
 
 });
