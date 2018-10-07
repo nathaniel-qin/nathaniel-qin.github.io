@@ -4,7 +4,7 @@ A static website containing my portfolio of design projects.
 
 ## Usage
 
-Check it out at the [github page](https://nathaniel-qin.github.io/personal-website).
+Check it out at the [github page](https://nathaniel-qin.github.io).
 
 You are welcome to clone this repository if you want to play with my code.
 
