@@ -25,6 +25,11 @@
   cursor: pointer;
 }
 
+.collapse-button {
+  margin-right: 28px;
+  margin-left: auto;
+}
+
 .active {
   font-weight: 600;
   color: black;
@@ -39,12 +44,12 @@
 
   .side-nav {
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
     height: unset;
     border-right: none;
     display: flex;
     box-shadow: 0 5px 6px gray;
-    padding-bottom: 0;
   }
 
   .side-nav h3 {

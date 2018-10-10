@@ -25,10 +25,6 @@
   height: auto;
 }
 
-.image {
-  width: 100%;
-}
-
 .image-description {
   margin-top: auto;
   margin-bottom: auto;
@@ -45,7 +41,8 @@
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1.4em;
-  padding-left: 100px;
+  text-indent: 40px;
+  padding-left: 60px;
   text-align: left;
 }
 
@@ -68,6 +65,11 @@
 
 .right-align {
   text-align: right;
+}
+
+.title {
+  font-weight: 400;
+  color: #2690AE;
 }
 
 p.project-link {
@@ -150,6 +152,32 @@ p.project-link {
 
 .familiar {
   color: #3487cb;
+}
+
+.project-row .col-md img.vert-img {
+  height: 400px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 20px gray;
+}
+
+img.horiz-img {
+  width: 70%;
+  box-shadow: 0 0 20px gray;
+  margin: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .project-row .col-md img.vert-img {
+    height: 350px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  img.horiz-img {
+    width: 80%;
+    margin: 16px;
+  }
 }
 
 #project-content {
