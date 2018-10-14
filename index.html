@@ -31,7 +31,7 @@
   <!--content-->
   <div id="content">
     <div class="container-fluid" id="intro">
-      <div class="row">
+      <div class="row" id="intro-words">
         <div class="col-md-6 offset-md-0 col-sm-10 offset-sm-2 col-11 offset-1">
           <h1>hi, i'm<br>nathaniel.</h1>
         </div>
@@ -40,37 +40,40 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" id="projects-section">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="row project" id="woh_box">
-            <div class="col-4 project-image" id="word-of-hands"></div>
-            <div class="col-8 project-words">
-              <h4>Word of Hands</h4>
-              <p>mobile application prototype designed to bridge accessibility to the Deaf community</p>
-              <p class="read-more">see more >></p>
+    <div class="container-fluid page-section">
+      <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">PROJECTS</h2>
+      <div id="all-projects">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="row project" id="woh_box">
+              <div class="col-4 project-image" id="word-of-hands"></div>
+              <div class="col-8 project-words">
+                <h4>Word of Hands</h4>
+                <p>mobile application prototype designed to bridge accessibility to the Deaf community</p>
+                <p class="read-more">see more >></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="row project" id="klema_box">
+              <div class="col-4 project-image" id="klema"></div>
+              <div class="col-8 project-words">
+                <h4>Klema.io</h4>
+                <p>social media network designed to connect missionaries and their supporters</p>
+                <p class="read-more">see more >></p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="row project" id="klema_box">
-            <div class="col-4 project-image" id="klema"></div>
-            <div class="col-8 project-words">
-              <h4>Klema.io</h4>
-              <p>social media network designed to connect missionaries and their supporters</p>
-              <p class="read-more">see more >></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="row project" id="car_box">
-            <div class="col-4 project-image" id="carpool"></div>
-            <div class="col-8 project-words">
-              <h4>Carpool</h4>
-              <p>web application for college fellowship carpool ministry with riddles and puzzles</p>
-              <p class="read-more">see more >></p>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="row project" id="car_box">
+              <div class="col-4 project-image" id="carpool"></div>
+              <div class="col-8 project-words">
+                <h4>Carpool</h4>
+                <p>web application for college fellowship carpool ministry with riddles and puzzles</p>
+                <p class="read-more">see more >></p>
+              </div>
             </div>
           </div>
         </div>
@@ -89,27 +92,31 @@
 <script>
 $(document).ready(function() {
 
+  AOS.init({
+    duration: 1000
+  });
+
   var $kBox = $("#klema_box");
   var $wohBox = $("#woh_box");
   var $carBox = $("#car_box");
   var $ssBox = $("#ss_box");
 
   $kBox.on("click", function() {
-    window.location.href = "Projects/klema.html";
+    window.location.href = "projects/klema.html";
   });
   $kBox.on("mouseover", function() {
     $kBox.css("cursor", "pointer");
   });
 
   $wohBox.on("click", function() {
-    window.location.href = "Projects/word_of_hands.html";
+    window.location.href = "projects/word_of_hands.html";
   });
   $wohBox.on("mouseover", function() {
     $wohBox.css("cursor", "pointer");
   });
 
   $carBox.on("click", function() {
-    window.location.href = "Projects/carpool.html";
+    window.location.href = "projects/carpool.html";
   });
   $carBox.on("mouseover", function() {
     $carBox.css("cursor", "pointer");
