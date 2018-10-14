@@ -3,28 +3,53 @@
 
 .project {
   height: 300px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px gray;
-  padding: 1%;
+  box-shadow: 0px 0px 10px #555;
+  padding: 3%;
   margin: 0.5%;
   margin-top: 12px;
   margin-bottom: 12px;
-  background-color: white;
+}
+
+#woh_box {
+  background-color: rgba(254, 127, 21, 0.25);
+}
+
+#klema_box {
+  background-color: rgba(53, 190, 190, 0.25);
+}
+
+#car_box {
+  background-color: rgba(131, 200, 244, 0.25);
+}
+
+#woh_box:hover {
+  background-color: rgba(254, 127, 21, 0.4);
+}
+
+#klema_box:hover {
+  background-color: rgba(53, 190, 190, 0.4);
+}
+
+#car_box:hover {
+  background-color: rgba(131, 200, 244, 0.4);
 }
 
 .project:hover {
-  opacity: 0.9;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 15px #333;
+  transform: translateY(-2px);
 }
 
 .project-image {
   height: 100%;
+  border: 3px solid white;
+  border-radius: 8px;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 0 5px gray;
 }
 
 .page-section h2 {
-  font-size: 56px;
+  font-size: 64px;
   text-align: center;
   margin-top: 8%;
   margin-bottom: 8%;
@@ -32,7 +57,15 @@
   padding-bottom: 8%;
   margin-left: 8%;
   margin-right: 8%;
-  border: 2px dashed gray;
+  border: 2px dashed lightgray;
+}
+
+@media screen and (max-width: 767px) {
+  .page-section h2 {
+    font-size: 48px;
+    margin-top: 16%;
+    margin-bottom: 16%;
+  }
 }
 
 .page-section {
@@ -112,15 +145,15 @@
 
 .project-words h4 {
   padding-bottom: 2%;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid white;
 }
 
 .read-more {
   color: rgb(150, 150, 150);
   display: block;
   position: absolute;
-  bottom: 0;
-  right: 20px;
+  bottom: -8px;
+  right: 16px;
 }
 
 #content {
