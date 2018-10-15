@@ -1,11 +1,13 @@
 .affiliation {
-  padding: 50px 50px;
+  margin-top: 6%;
+  padding: 36px 24px;
   text-align: center;
   background-color: #0e2c5e;
   color: white;
   box-shadow: 0 0 20px gray;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .project-row {
@@ -32,9 +34,24 @@
 }
 
 .project-row h1, .affiliation h1 {
-  text-align: left;
+  text-align: center;
   font-weight: 400;
   font-size: 2.5em;
+}
+
+.project-row h1 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: 24%;
+  margin-right: 24%;
+  border: 2px dashed lightgray;
+}
+
+.project-row hr, .affiliation hr {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .project-row h2, .affiliation h2 {
@@ -42,8 +59,10 @@
   font-size: 1.5em;
   line-height: 1.4em;
   text-indent: 40px;
-  padding-left: 60px;
   text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 16px;
 }
 
 .project-row li {
@@ -72,18 +91,36 @@
   color: #2690AE;
 }
 
-p.project-link {
-  padding-left: 100px;
-  text-align: left;
-  color: rgb(100, 100, 200);
-  text-decoration: underline;
-  font-size: 1.75em;
+.project-link {
+  background-color: #2690AE;
+  width: 40%;
+  height: 64px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border-bottom: 5px solid #333;
+}
+
+.project-link:hover {
+  border-bottom: 3px solid #333;
+  transform: translateY(2px);
+}
+
+.project-link p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white;
+  font-size: 1.5em;
+  line-height: 64px;
 }
 
 .project-row .col-md img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
   height: 500px;
   box-shadow: 0 0 20px gray;
   padding: 0;
@@ -101,14 +138,11 @@ p.project-link {
   margin-bottom: 32px;
 }
 
-.project-row .col-md, .project-row .col-md-7 {
-  display: flex;
-  align-items: center;
-}
-
 .project-title {
-  margin-top: 30px;
-  height: 350px;
+  margin-top: 29px;
+  height: 80vh;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .technology {
@@ -137,13 +171,23 @@ p.project-link {
 }
 
 .tech-desc h3 {
-  font-size: 1.5em;
+  font-size: 2.25em;
   line-height: 1.75em;
 }
 
 .tech-desc p {
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .tech-desc h3 {
+    font-size: 1.5em;
+  }
+
+  .tech-desc p {
+    font-size: 1em;
+  }
 }
 
 .proficient {
@@ -154,11 +198,11 @@ p.project-link {
   color: #3487cb;
 }
 
-.project-row .col-md img.vert-img {
+img.vert-img {
   height: 400px;
+  box-shadow: 0 0 20px gray;
   margin-top: 24px;
   margin-bottom: 24px;
-  box-shadow: 0 0 20px gray;
 }
 
 img.horiz-img {
@@ -168,10 +212,9 @@ img.horiz-img {
 }
 
 @media screen and (max-width: 767px) {
-  .project-row .col-md img.vert-img {
+
+  img.vert-img {
     height: 350px;
-    margin-top: 16px;
-    margin-bottom: 16px;
   }
 
   img.horiz-img {
@@ -182,6 +225,12 @@ img.horiz-img {
 
 #project-content {
   padding-left: 0;
+}
+
+#content {
+  position: relative;
+  z-index: 0;
+  top: 30px;
 }
 
 #woh-banner {
@@ -199,31 +248,45 @@ img.horiz-img {
   background-size: cover;
 }
 
-@media screen and (max-width: 575px) {
-  #woh-banner {
-    height: 200px;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  #woh-banner {
-    height: 300px;
-  }
 
   .project-row {
     font-size: 0.75em;
     padding: 30px 20px 0 20px;
   }
 
+  .project-row h1 {
+    padding: 32px;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .project-link {
+    width: 50%;
+    height: 48px;
+  }
+
+  .project-link p {
+    line-height: 48px;
+  }
+
   .affiliation {
     font-size: 0.8em;
-    padding: 30px 30px;
+    padding: 32px 16px;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   .project-row h2, .affiliation h2 {
-    padding-left: 0;
     padding-top: 10px;
     text-indent: 24px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .affiliation h2 {
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
   .project-row li {
@@ -232,6 +295,8 @@ img.horiz-img {
 
   .project-row .col-md img {
     height: 400px;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   p.project-link {
@@ -243,7 +308,10 @@ img.horiz-img {
   }
 
   .image-description {
-    border-bottom: 2px solid lightgray;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .technology {
@@ -254,12 +322,7 @@ img.horiz-img {
 
 @media screen and (max-width: 991px) {
   .project-title {
-    margin-top: 10px;
-    height: 300px;
-  }
-
-  #project-content {
-    padding-left: 15px;
+    height: 60vh;
   }
 
   .technology {

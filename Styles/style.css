@@ -31,12 +31,13 @@ p {
 
 nav {
   font-family: 'Alegreya', serif;
-  border-bottom: 3.5px dotted rgb(220, 220, 220);
+  box-shadow: 0 1px 10px black;
   background-color: white;
   padding: 4px 0;
   width: 100%;
   position: fixed;
   z-index: 1;
+  top: 0;
 }
 
 hr {
@@ -45,14 +46,10 @@ hr {
   margin-right: 15px;
 }
 
-.footer-divider {
-  margin-top: 0;
-}
-
 footer {
-  margin-top: 0;
+  margin-top: 16px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 32px;
   padding-bottom: 20px;
 }
 

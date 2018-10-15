@@ -3,10 +3,13 @@
   padding: 16px 8px;
   border-right: 2px solid lightgray;
   height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
 }
 
 .side-nav h3 {
-  padding: 10px 0 14px 8px;
+  padding: 64px 0 14px 8px;
   margin-right: 10px;
   color: black;
   border-bottom: 2px solid lightgray;

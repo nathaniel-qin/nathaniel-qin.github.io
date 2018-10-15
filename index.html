@@ -40,41 +40,49 @@
         </div>
       </div>
     </div>
+    <a id="projects" name="projects"></a>
+    <div></div>
     <div class="container-fluid page-section">
       <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">PROJECTS</h2>
       <div id="all-projects">
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="row project" id="woh_box">
-              <div class="col-4 project-image" id="word-of-hands"></div>
-              <div class="col-8 project-words">
-                <h4>Word of Hands</h4>
-                <p>mobile application prototype designed to bridge accessibility to the Deaf community</p>
-                <p class="read-more">see more >></p>
+            <a href="projects/word_of_hands.html">
+              <div class="row project" id="woh_box">
+                <div class="col-4 project-image" id="word-of-hands"></div>
+                <div class="col-8 project-words">
+                  <h4>Word of Hands</h4>
+                  <p>mobile application prototype designed to bridge accessibility to the Deaf community</p>
+                  <p class="read-more">see more >></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="row project" id="klema_box">
-              <div class="col-4 project-image" id="klema"></div>
-              <div class="col-8 project-words">
-                <h4>Klema.io</h4>
-                <p>social media network designed to connect missionaries and their supporters</p>
-                <p class="read-more">see more >></p>
+            <a href="projects/klema.html">
+              <div class="row project" id="klema_box">
+                <div class="col-4 project-image" id="klema"></div>
+                <div class="col-8 project-words">
+                  <h4>Klema.io</h4>
+                  <p>social media network designed to connect missionaries and their supporters</p>
+                  <p class="read-more">see more >></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="row project" id="car_box">
-              <div class="col-4 project-image" id="carpool"></div>
-              <div class="col-8 project-words">
-                <h4>Carpool</h4>
-                <p>web application for college fellowship carpool ministry with riddles and puzzles</p>
-                <p class="read-more">see more >></p>
+            <a href="projects/carpool.html">
+              <div class="row project" id="car_box">
+                <div class="col-4 project-image" id="carpool"></div>
+                <div class="col-8 project-words">
+                  <h4>Carpool</h4>
+                  <p>web application for college fellowship carpool ministry with riddles and puzzles</p>
+                  <p class="read-more">see more >></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -82,7 +90,7 @@
     <hr class="footer-divider">
   </div>
   <!--footer-->
-  <footer>
+  <footer style="padding-top: 12px;">
     <p>Developed by Nathaniel Qin 2018</p>
     <p>Find me on <a href="https://www.facebook.com/nq2theResq"><span style="font-weight: 400;">Facebook, <a href="https://www.linkedin.com/in/nathaniel-qin"><span style="font-weight: 400;">LinkedIn</span></a> and <a href="https://github.com/nathaniel-qin"><span style="font-weight: 400;">GitHub</span></a></p>
   </footer>
@@ -94,32 +102,6 @@ $(document).ready(function() {
 
   AOS.init({
     duration: 1000
-  });
-
-  var $kBox = $("#klema_box");
-  var $wohBox = $("#woh_box");
-  var $carBox = $("#car_box");
-  var $ssBox = $("#ss_box");
-
-  $kBox.on("click", function() {
-    window.location.href = "projects/klema.html";
-  });
-  $kBox.on("mouseover", function() {
-    $kBox.css("cursor", "pointer");
-  });
-
-  $wohBox.on("click", function() {
-    window.location.href = "projects/word_of_hands.html";
-  });
-  $wohBox.on("mouseover", function() {
-    $wohBox.css("cursor", "pointer");
-  });
-
-  $carBox.on("click", function() {
-    window.location.href = "projects/carpool.html";
-  });
-  $carBox.on("mouseover", function() {
-    $carBox.css("cursor", "pointer");
   });
 
 });
