@@ -100,11 +100,14 @@
   margin-right: auto;
   border-radius: 5px;
   border-bottom: 5px solid #333;
+  box-shadow: 0 5px 15px gray;
 }
 
 .project-link:hover {
+  margin-top: 26px;
+  height: 62px;
   border-bottom: 3px solid #333;
-  transform: translateY(2px);
+  box-shadow: 0 5px 10px gray;
 }
 
 .project-link p {
@@ -146,10 +149,11 @@
 }
 
 .technology {
-  box-shadow: 0 0 5px 1px gray;
-  border-radius: 2px;
+  box-shadow: 0 0 5px 1px lightgray;
+  border-radius: 25px;
   padding: 16px;
   margin: 10px;
+  border-bottom: 1px solid gray;
 }
 
 .tech-icon {
@@ -250,6 +254,10 @@ img.horiz-img {
 
 @media screen and (max-width: 767px) {
 
+  .affiliation {
+    margin-top: 12%;
+  }
+  
   .project-row {
     font-size: 0.75em;
     padding: 30px 20px 0 20px;
@@ -264,6 +272,11 @@ img.horiz-img {
   .project-link {
     width: 50%;
     height: 48px;
+  }
+
+  .project-link:hover {
+    margin-top: 26px;
+    height: 46px;
   }
 
   .project-link p {
@@ -310,8 +323,7 @@ img.horiz-img {
   .image-description {
     margin-left: 12%;
     margin-right: 12%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   .technology {
