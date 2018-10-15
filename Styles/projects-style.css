@@ -100,21 +100,22 @@
 }
 
 .project-link {
-  background-color: #9EE3F7;
+  background-color: #ADE9FC;
   height: 64px;
   border-radius: 5px;
-  border-bottom: 5px solid #333;
+  border-bottom: 5px solid #777;
   box-shadow: 0 5px 15px gray;
 }
 
 .project-link:hover {
   margin-top: 26px;
   height: 62px;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #777;
   box-shadow: 0 5px 10px gray;
 }
 
 .project-link p {
+  font-weight: 400;
   margin-top: 12px;
   margin-bottom: 12px;
   color: black;
