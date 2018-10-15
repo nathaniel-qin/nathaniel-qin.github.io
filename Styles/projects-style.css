@@ -91,13 +91,17 @@
   color: #2690AE;
 }
 
-.project-link {
-  background-color: #9EE3F7;
+.project-link-anchor {
+  display: block;
   width: 40%;
-  height: 64px;
   margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.project-link {
+  background-color: #9EE3F7;
+  height: 64px;
   border-radius: 5px;
   border-bottom: 5px solid #333;
   box-shadow: 0 5px 15px gray;
@@ -115,7 +119,7 @@
   margin-bottom: 12px;
   color: black;
   font-size: 1.5em;
-  line-height: 64px;
+  line-height: 59px;
 }
 
 .project-row .col-md img {
@@ -269,8 +273,11 @@ img.horiz-img {
     margin-right: 12%;
   }
 
-  .project-link {
+  .project-link-anchor {
     width: 50%;
+  }
+
+  .project-link {
     height: 48px;
   }
 
@@ -280,7 +287,7 @@ img.horiz-img {
   }
 
   .project-link p {
-    line-height: 48px;
+    line-height: 43px;
   }
 
   .affiliation {
