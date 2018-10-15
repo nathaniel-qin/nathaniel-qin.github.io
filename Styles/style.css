@@ -40,6 +40,14 @@ nav {
   top: 0;
 }
 
+#logo {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: left;
+  height: 100%;
+  margin-left: 24px;
+}
+
 hr {
   border: 1px solid rgb(220, 220, 220);
   margin-left: 15px;
