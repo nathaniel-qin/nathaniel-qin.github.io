@@ -40,12 +40,45 @@ nav {
   top: 0;
 }
 
+nav a p {
+  font-family: 'Nunito Sans', sans-serif;
+  display: inline;
+  font-size: 1em;
+}
+
+#nav-options {
+  display: inline;
+  position: fixed;
+  right: 8px;
+  top: 16px;
+}
+
+#nav-options a {
+  padding-right: 32px;
+  color: #888;
+}
+
+#nav-options a:hover {
+  color: black;
+}
+
 #logo {
   font-size: 1.5em;
   font-weight: 400;
   text-align: left;
   height: 100%;
   margin-left: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  #nav-options a {
+    padding-right: 12px;
+    font-size: 0.8em;
+  }
+
+  #logo {
+    margin-left: 16px;
+  }
 }
 
 hr {
