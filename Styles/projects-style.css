@@ -92,7 +92,7 @@
 }
 
 .project-link {
-  background-color: #2690AE;
+  background-color: #9EE3F7;
   width: 40%;
   height: 64px;
   margin-top: 24px;
@@ -113,7 +113,7 @@
 .project-link p {
   margin-top: 12px;
   margin-bottom: 12px;
-  color: white;
+  color: black;
   font-size: 1.5em;
   line-height: 64px;
 }
@@ -257,7 +257,7 @@ img.horiz-img {
   .affiliation {
     margin-top: 12%;
   }
-  
+
   .project-row {
     font-size: 0.75em;
     padding: 30px 20px 0 20px;
