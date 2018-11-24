@@ -207,10 +207,9 @@
 }
 
 img.vert-img {
-  height: 400px;
+  width: 70%;
   box-shadow: 0 0 20px gray;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 24px;
 }
 
 img.horiz-img {
