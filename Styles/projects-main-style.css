@@ -166,7 +166,7 @@ p.larger-p {
 }
 
 #intro {
-  background: url("../Media/images/background.png") no-repeat center center fixed;
+  background: url("../Media/images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -177,7 +177,7 @@ p.larger-p {
 }
 
 #quote {
-  background: url("../Media/images/background2.png") no-repeat center center fixed;
+  background: url("../Media/images/background2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
