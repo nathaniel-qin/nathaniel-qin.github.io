@@ -10,6 +10,10 @@
   margin-bottom: 12px;
 }
 
+#focus_box {
+  background-color: rgba(90, 112, 158, 0.25);
+}
+
 #woh_box {
   background-color: rgba(254, 127, 21, 0.25);
 }
@@ -20,6 +24,10 @@
 
 #car_box {
   background-color: rgba(131, 200, 244, 0.25);
+}
+
+#focus_box:hover {
+  background-color: rgba(90, 112, 158, 0.4);
 }
 
 #woh_box:hover {
@@ -121,9 +129,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-}
-
 #klema {
   background-image: url("../Media/klema/klema.png");
 }
@@ -134,6 +139,10 @@
 
 #carpool {
   background-image: url("../Media/carpool/carpool.png");
+}
+
+#focus {
+  background-image: url("../Media/focus/focus.png");
 }
 
 .project-words {

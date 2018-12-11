@@ -99,7 +99,7 @@
 }
 
 .project-link {
-  background-color: #ADE9FC;
+  background-color: #F4F4F4;
   height: 64px;
   border-radius: 5px;
   border-bottom: 5px solid #777;
@@ -107,6 +107,7 @@
 }
 
 .project-link:hover {
+  background-color: white;
   margin-top: 26px;
   height: 62px;
   border-bottom: 3px solid #777;
@@ -240,6 +241,11 @@ img.horiz-img {
   top: 30px;
 }
 
+#focus-banner {
+  background: url("../Media/focus/focus_banner.png") no-repeat center;
+  background-size: cover;
+}
+
 #woh-banner {
   background: url("../Media/woh/woh_banner.png") no-repeat center;
   background-size: cover;
@@ -253,6 +259,28 @@ img.horiz-img {
 #klema-banner {
   background: url("../Media/klema/klema_banner.png") no-repeat center;
   background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  iframe {
+    width: 300px;
+    height: 189px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 400px;
+    height: 252px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  iframe {
+    width: 600px;
+    height: 378px;
+    margin: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
