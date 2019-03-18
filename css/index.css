@@ -39,6 +39,10 @@ p, h6 {
   padding-bottom: 4%;
 }
 
+.my-projects h4:first-of-type {
+  margin: 0;
+}
+
 .my-projects h4 {
   background-color: #D89700;
   color: white;
