@@ -1,0 +1,132 @@
+.container {
+  width: 80%;
+}
+
+.my-about {
+  margin-top: 68px;
+  padding: 4%;
+  background-color: white;
+}
+
+.about-section {
+  background-color: #F9BF01;
+  margin: 0;
+}
+
+[class^='col-'] {
+  padding: 0;
+}
+
+.about-blurb {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-greeting {
+  color: white;
+  background-color: black;
+  padding: 2%;
+}
+
+.about-greeting p {
+  margin: 0;
+  color: #DDD;
+}
+
+.about-greeting .my-name {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+.about-greeting .my-subtitle {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.yellow {
+  color: #F9BF01;
+}
+
+.about-summary {
+  font-size: 1em;
+  margin: 0;
+  padding: 4%;
+  flex: 1;
+}
+
+#my-picture {
+  background-image: url('../images/me.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+}
+
+#my-picture img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.my-download {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  background-color: black;
+  transition: all 0.25s ease;
+}
+
+.my-download:hover {
+  background-color: white;
+}
+
+.my-download:hover p {
+  color: #D89700;
+}
+
+.my-download:hover .fa-file-download {
+  color: black;
+}
+
+.fa-file-download {
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.my-download p {
+  color: white;
+  margin: 0;
+  margin-left: 16px;
+  transition: all 0.25s ease;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-summary {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #my-picture {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .my-about {
+    padding: 8%;
+  }
+
+  #my-picture {
+    height: 450px;
+  }
+}

@@ -1,0 +1,485 @@
+.container {
+  padding: 4%;
+  background-color: white;
+  margin-top: 68px;
+}
+
+[class^="col-"] {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.project-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 4%;
+}
+
+.project-title * {
+  margin: 0;
+  padding: 0;
+}
+
+.project-title .project-name {
+  font-size: 2.25em;
+  font-weight: 800;
+}
+
+.project-title .project-type {
+  color: #DDD;
+  font-size: 1.25em;
+  font-weight: 200;
+  flex: 1;
+}
+
+.project-title .project-affiliation {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.project-title .project-date {
+  color: #DDD;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+#focus {
+  background-image: url('../images/focus/focus_banner.png');
+}
+
+#woh {
+  background-image: url('../images/woh/woh_banner.png');
+}
+
+.project-section {
+  margin: 4% 0 0;
+}
+
+.project-section h6 {
+  background-color: #D89700;
+  color: white;
+  padding: 1% 2%;
+  font-weight: 600;
+  font-size: 1.5em;
+  border-left: 8px solid #936700;
+}
+
+.project-section p {
+  color: #333;
+  font-size: 1em;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.accented {
+  color: #D89700;
+  font-weight: 800;
+  font-size: 1.05em;
+}
+
+.large-accented {
+  color: #D89700;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.project-section .project-image {
+  margin: 2rem auto;
+  width: 60%;
+  display: block;
+}
+
+.project-section p + .project-image {
+  margin-top: 1rem;
+}
+
+.project-section .project-image img {
+  width: 100%;
+}
+
+.project-section .project-image-caption {
+  font-size: 0.75em;
+  padding-bottom: 0;
+  color: #555;
+}
+
+.project-section .project-image-caption em {
+  color: #888;
+}
+
+.project-section .project-video {
+  width: 60%;
+  margin: 0 auto 1rem;
+  position: relative;
+  overflow: hidden;
+  padding-top: 33.75%;
+}
+
+.project-section .project-video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project-section .project-screen {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.project-section .project-screen img {
+  height: 500px;
+}
+
+.project-section .project-screen p {
+  padding: 2%;
+  margin: 2rem 0;
+}
+
+.project-section .left-project {
+  flex-direction: row;
+}
+
+.project-section .left-project p {
+  border-left: 5px solid #F9BF01;
+  text-align: left;
+}
+
+.project-section .right-project {
+  flex-direction: row-reverse;
+}
+
+.project-section .right-project p {
+  border-right: 5px solid #F9BF01;
+  text-align: right;
+}
+
+.project-section .center-project {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto 0;
+  width: 80%;
+}
+
+.project-section .center-project img {
+  width: 100%;
+  box-shadow: 0 0 8px #333;
+}
+
+.project-section .center-project p {
+  margin-bottom: 2em;
+  border-left: 5px solid #F9BF01;
+  padding: 2%;
+  margin-top: 1rem;
+}
+
+.project-section .center-project:last-of-type p {
+  margin-bottom: 0;
+}
+
+.project-section .project-callout {
+  padding: 1rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.project-section .project-callout div {
+  width: 25%;
+  margin: 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-section .project-callout div hr {
+  width: 100%;
+  border: 1px solid #DDD;
+  border-radius: 20%;
+}
+
+.project-section .project-callout p {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  font-family: 'Alegreya', sans-serif;
+  padding: 0;
+}
+
+.project-section .project-quote {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-section .project-quote-words {
+  color: #888;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
+.project-section .project-quote-words::before {
+  content: "\"";
+  color: #F9BF01;
+  margin-right: 1%;
+  font-weight: 800;
+}
+
+.project-section .project-quote-words::after {
+  content: "\"";
+  color: #F9BF01;
+  margin-left: 1%;
+  font-weight: 800;
+}
+
+.project-section .project-quote-citation {
+  color: black;
+  text-align: right;
+  font-size: 0.75em;
+}
+
+.project-section .project-quote-citation::before {
+  content: "—";
+  color: #F9BF01;
+  margin-right: 1%;
+}
+
+.project-section .project-list {
+  width: 70%;
+  margin: 0 auto 0.75rem;
+}
+
+.project-section .project-list .project-list-item {
+  padding-bottom: 0.25rem;
+  text-indent: -32px;
+  margin-right: -32px;
+  color: #888;
+  font-weight: 200;
+}
+
+.project-section .project-list .project-list-item a {
+  color: #D89700;
+  text-decoration: underline;
+  transition: all 0.25s ease;
+  font-weight: 400;
+}
+
+.project-section .project-list .project-list-item a:hover {
+  color: #F9BF01;
+  text-decoration: none;
+}
+
+.project-section .project-tool-row {
+  margin: 0;
+}
+
+.project-section .project-tool {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: black;
+  padding: 2%;
+  border: 4px solid white;
+}
+
+.project-section .project-tool img {
+  height: 30px;
+}
+
+.project-section .project-tool p {
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  padding: 0 0 0 6%;
+}
+
+.project-section .project-button {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  height: 64px;
+  align-items: center;
+  padding: 2%;
+  margin: 0 auto;
+  background-color: #F9BF01;
+  transition: all 0.25s ease;
+}
+
+.project-section .project-button:hover {
+  background-color: black;
+}
+
+.project-section .project-button:hover span {
+  color: white;
+}
+
+.project-section .project-button:hover p {
+  color: white;
+}
+
+.project-section .project-button:hover .fa-arrow-alt-circle-right {
+  color: #F9BF01;
+}
+
+.project-section .project-button p {
+  font-size: 1em;
+  font-weight: 200;
+  color: black;
+  padding: 0;
+  flex: 1;
+}
+
+.project-section .project-button span {
+  font-weight: 800;
+  color: black;
+}
+
+.project-section .project-button .fa-arrow-alt-circle-right {
+  color: black;
+  transition: all 0.25s ease;
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 1199px) {
+  .project-section .project-tool p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .container {
+    padding: 0 0 16%;
+  }
+
+  .project-banner {
+    height: 300px;
+  }
+
+  .project-title {
+    height: 150px;
+    padding: 4% 12%;
+    border-bottom: 16px solid #F9BF01;
+  }
+
+  .project-title .project-name {
+    font-size: 1.5em;
+  }
+
+  .project-title .project-type {
+    font-size: 1em;
+  }
+
+  .project-title .project-affiliation {
+    text-align: right;
+    font-size: 1em;
+  }
+
+  .project-title .project-date {
+    text-align: right;
+    font-size: 0.8em;
+  }
+
+  .project-section {
+    margin: 8% 8% 0;
+  }
+
+  .project-section:last-of-type {
+    margin-bottom: -1rem;
+  }
+
+  .project-section .project-image {
+    width: 100%;
+  }
+
+  .project-section .project-image-caption {
+    font-size: 0.6em;
+  }
+
+  .project-section .project-video {
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .project-section .project-callout div {
+    margin: 0 2%;
+  }
+
+  .project-section .project-callout p {
+    font-size: 1.25em;
+  }
+
+  .project-section .project-quote {
+    color: #888;
+    text-align: center;
+    font-size: 1.15em;
+  }
+
+  .project-section .project-quote-citation {
+    font-size: 0.6em;
+  }
+
+  .project-section .project-screen {
+    margin: 1rem auto;
+  }
+
+  .project-section .project-screen img {
+    height: 400px;
+  }
+
+  .project-section .project-screen p {
+    padding: 2%;
+    margin: 0 0 2rem;;
+  }
+
+  .project-section .left-project {
+    flex-direction: column;
+  }
+
+  .project-section .right-project {
+    flex-direction: column;
+  }
+
+  .project-section .center-project {
+    width: 100%;
+  }
+
+  .project-section .center-project p {
+    padding: 1% 4% 4%;
+    border: none;
+    border-top: 5px solid #F9BF01;
+  }
+
+  .project-section .project-tool {
+    padding: 4% 8%;
+  }
+
+  .project-section .project-tool p {
+    font-size: 1em;
+  }
+
+  .project-section .project-button {
+    padding: 0 6%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .project-section .project-tool p {
+    font-size: 0.9em;
+  }
+}

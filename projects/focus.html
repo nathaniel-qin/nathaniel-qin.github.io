@@ -1,275 +1,208 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-  <title>nathaniel qin - focus</title>
-  <meta charset="utf-8">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="../Styles/style.css">
-  <link rel="stylesheet" href="../Styles/projects-style.css">
-  <link rel="icon" href="../Media/icons/icon-white.png">
-</head>
-
-<body>
-  <!--nav bar-->
-  <nav>
-    <a href="../index.html" id="logo">
-      <img src="../Media/icons/icon-black.png" width=50 height=50 alt="NQ"> nathaniel qin
-    </a>
-    <div id="nav-options">
-      <a href="../index.html#projects"><p>PROJECTS</p></a>
-      <a href="../index.html#about"><p>ABOUT</p></a>
-    </div>
-  </nav>
-  <div class="container-fluid" id="content">
-    <div id="project-content">
-      <div class="project-title" id="focus-banner">
+<html lang="en-us">
+  <head>
+    <title>nathaniel qin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- copied these from the official Bootstrap website, which includes integrity and crossorigin -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/project.css" type="text/css">
+    <link rel="icon" href="../images/icons/icon-black.png">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/icons/icon-white.png" alt="NQ">
+        <span>nathaniel qin</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#projects" id="nav-projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html" id="nav-about">ABOUT</a>
+          </li>
+        </ul>
       </div>
-      <div class="project-row words">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">AT A GLANCE</h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Focus is a desktop web application that facilitates distraction-free study sessions. Users can set a timer for however long they want their study session to last. Navigating away from the page cancels the session, and successfully completing a session allows users to gain points, which they can spend in the shop to customize the look of the application.
-        </h2>
-        <a class="project-link-anchor" href="https://threestripes.herokuapp.com" target="_blank">
-          <div class="project-link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <p>Check it out >></p>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="row project-header">
+          <div class="col-md-5 project-banner" id="focus">
           </div>
+          <div class="col-md-7 project-title">
+            <h4 class="project-name">Focus</h4>
+            <p class="project-type">WEB APPLICATION</p>
+            <p class="project-affiliation">UCSD COGS 120</p>
+            <p class="project-date">September 2018 - December 2018</p>
+          </div>
+        </div>
+        <div class="project-section">
+          <h6>AT A GLANCE</h6>
+          <p>Focus is a desktop web application that facilitates distraction-free study sessions by rewarding nonstop study sessions. It was designed specifically with sick students in mind to help them catch up on missed work due to their condition, but can easily be extended to a broader audience of the general student population as a study aid.</p>
+          <p><span class="accented">My Collaborators:</span> Edward Chen, Eunice Chan</p>
+          <a href="https://threestripes.herokuapp.com/" target="_blank">
+            <div class="project-button">
+              <p>CHECK IT OUT</p>
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="project-section">
+          <h6>ROLES</h6>
+          <p><span class="accented">User Interface Designer:</span> I led the design on all of the pages of our application, prioritizing both aesthetic design and basic usability principles. I also conducted a few iterations of simple user testing and heuristic evaluations with my initial designs to reach the end product.</p>
+          <p><span class="accented">Front-End Developer:</span> I also led the development and coding of our actual application on the front-end side of things using HTML, CSS, and JavaScript. We tried to prioritize iterations as much as possible, but given the time span of this project, we were unable to go through full, independent iterations. I also worked closely with Edward, our back-end developer, to implement various web functionalities.</p>
+        </div>
+        <div class="project-section">
+          <h6>DESIGN GOALS</h6>
+          <p>At the start of our project term, my team was tasked with designing an application that enhanced health. For our preliminary needfinding, we observed students recovering from illness as they attempted to catch up on school work. This led to the discovery that they encountered a lot of distractions due to their condition, such as the need to drink water, cough, blow their nose, etc. On top of this, they were distracted by ordinary distractions as well, like notifications from social media or other websites. Below are a few examples of the needs we identified from our observations.</p>
+          <div class="project-list">
+            <p class="project-list-item">Unwell students need motivation to continue productivity when fatigued from illness.</p>
+            <p class="project-list-item">Unwell students need a reliable way to catch up on lectures that are missed due to illness.</p>
+            <p class="project-list-item">Unwell students need an easy way to relieve symptoms without interrupting their workflow.</p>
+          </div>
+          <p>We wanted to address this particular facet of health; not only in allowing students to study well while their physical health was affected, but also in alleviating mental health problems that may occur as a result of being fatigued from sickness and behind in school work. Unfortunately, with a digital solution as the project prompt defines, we would be limited to addressing only the digital distractions that might be encountered, and not physical distractions as a result of illness. But from the observations we gathered, we saw that the digital distractions simply amplified the interruptions that were already occuring physically. With these specific constraints on our project, we developed a clear design goal to help drive our process.</p>
+          <div class="project-callout">
+            <div><hr></div>
+            <p>Design a solution that helps students <span class="accented">stay focused</span> even when they are <span class="accented">distracted by outside factors</span> and guide their study patterns to <span class="accented">maximize productivity.</p>
+            <div><hr></div>
+          </div>
+        </div>
+        <div class="project-section">
+          <h6>FINAL SCREENS</h6>
+          <div class="center-project">
+            <img src="../images/focus/focus_screen_1.png">
+            <p><span class="large-accented">Home</span><br>The application has two main functionalities: the timer and the shop. On this home page, users have these two main options to navigate to. They can either use the timer, which is equivalent to starting a study session, or go to the shop, in which they can spend points they earned from studying.</p>
+          </div>
+          <div class="center-project">
+            <img src="../images/focus/focus_screen_2.png">
+            <p><span class="large-accented">Timer</span><br>The timer serves as the main study functionality of our application. Here, users can set how long they want to study for and launch the timer. If users navigate away from this page (by being distracted), their study session will be cancelled and will not return any rewards.</p>
+          </div>
+          <div class="center-project">
+            <img src="../images/focus/focus_screen_3.png">
+            <p><span class="large-accented">Shop</span><br>From their study sessions, users can earn points to spend in this shop. As of the project's end date, the shop sells color themes and animations, but can easily be expanded to better rewards, including those monetary in nature.</p>
+          </div>
+          <div class="center-project">
+            <img src="../images/focus/focus_screen_4.png">
+            <p><span class="large-accented">Profile</span><br>On each user's personal profile, they can see the history of their study sessions as well, including if they were successes or failures.</p>
+          </div>
+        </div>
+        <div class="project-section">
+          <h6>DESIGN PROCESS</h6>
+          <p>When we began to brainstorm ideas for our application, we wanted to first solidify not only our target audience, but also the kind of flow that our application would be able to provide. To accomplish this, we created a few storyboards. The ultimate purpose of these storyboards were to demonstrate the difficult situations our users face to the type of satisfaction they would receive from using our application. We wanted to clearly show this transition from start to finish, facilitated by our application. Below is an example of a storyboard we constructed.</p>
+          <div class="project-image">
+            <img src="../images/focus/focus_1.png" alt="Focus Storyboard">
+            <p class="project-image-caption"><em>A storyboard outlining the specific way that our application would help alleviate stress. We wanted to show the process of incentivizing successful study sessions and the satisfaction resulting from that.</em></p>
+          </div>
+          <p>From our storyboard, we knew that we wanted to design an application that would, at its very core, function as a point-earning timer with a shop to go along with it. Having solidified this as our main design idea, we went forward with creating a paper prototype to demonstrate our ideas.</p>
+          <div class="project-video">
+            <iframe src="https://www.youtube.com/embed/BD_c43mtddQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p>The final product definitely deviated from the original design that was outlined in the paper prototype. However, that's a normal part of the design process. The initial design can't be expected to be perfect, and improvements are made naturally as iterations continue. One stark difference is the platform for which we designed the web application. Our paper prototype is designed for mobile, while our final product is designed for desktop.</p>
+          <p><span class="accented">So why did we decide to design for desktop instead of mobile?</span> After considering all of our possibilities, we concluded that the application would just be overall more useful on desktop. Although we tend to receive more mobile distractions, There are already many existing solutions for reducing these, such as Do Not Disturb or airplane mode. Furthermore, because most studying does not require a mobile device, students could afford to even shut off their phone or place it in a different room. For desktop devices, notifications can often run free and cause many distractions. Originally, we also planned to allow users to whitelist certain websites so that they could utilize the Internet to study while still avoiding more distracting social media. Given our time constraints, we weren't able to implement this functionality, but it would have provided a much-needed solution for desktop distractions. Overall, we felt that there was a higher need for a desktop study aid to reduce distractions in that specific sphere.</p>
+          <p>Of course, the platform is not the only thing that changed throughout the course of this project. The design of the website underwent many changes as well which can all be attributed to iterations, some of which acquired through user testing.</p>
+          <div class="project-image">
+            <img src="../images/focus/focus_2.jpg" alt="Focus Iterations">
+            <p class="project-image-caption"><em>A visual demonstration of the numerous iterations of design we went through. Although we accelerated to high-fidelity designs rather quickly, we still completed a few iterations in the browser.</em></p>
+          </div>
+          <p>Having all of our designs and interactions in place, we conducted a few rounds of user testing with some potential users of our application. The testing sessions were extremely helpful because all of the members on our team had been staring at the application for hours each day. As a result, we'd become somewhat numb to its design, and by transition, its design flaws. The user testing sessions helped draw attention to some of the largest breakdowns that users could encounter.</p>
+          <div class="project-quote">
+            <p class="project-quote-words">The app looks great, but the timer page is a little confusing. I wasn't sure how to change the time by smaller time intervals.</p>
+            <p class="project-quote-citation"><em>Rebecca Hu, UCSD Student</em></p>
+          </div>
+          <p>That's a rather large flaw. The timer is part of our application's core functionality, and if it wasn't usable, then the application itself might as well be unusable. After debriefing with this tester for a little while, we discovered that the quick set buttons were drawing too much attention, and the individual arrows were difficult to see. Using this feedback, we altered our designs in an attempt to smooth out the errors. To validate our design, we also conducted a form of qualititative A/B testing by showing potential users both versions of the timer and evaluating how quickly and easily they were able to set the timer in each scenario.</p>
+          <div class="project-image">
+            <img src="../images/focus/focus_3.jpg" alt="Focus Timer Redesign">
+            <p class="project-image-caption"><em>A comparison of our old and new timer pages. The colors of the quick set buttons were changed to be less attention-grabbing. Also, though not visible in this still image, we added a bouncing animation to the arrows in the hopes that the motion would draw users' attentions.</em></p>
+          </div>
+        </div>
+        <div class="project-section">
+          <h6>CONCLUSION</h6>
+          <p>As a reminder, our initial design goal was as follows:</p>
+          <div class="project-callout">
+            <div><hr></div>
+            <p>Design a solution that helps students <span class="accented">stay focused</span> even when they are <span class="accented">distracted by outside factors</span> and guide their study patterns to <span class="accented">maximize productivity.</p>
+            <div><hr></div>
+          </div>
+          <p>At the end of our project, we had addressed most of the main needs that we were aiming to. We had successfully created an application that minimized digital distractions to help students stay on task, maximizing their productivity. We did fall short in allowing students to still study using their computers, as the system we ended up with only allowed for studying using physical materials. The design process that we followed was also extremely thorough, and I especially loved that we went through iterations that were tweaked through feedback garnered from user testing.</p>
+        </div>
+        <div class="project-section">
+          <h6>NEXT STEPS</h6>
+          <p><span class="accented">Better Incentives:</span> Currently, the rewards that can be obtained through our shop are objectively bland. Although it may be nice to change the color of the application or have an animation crawl across the screen with the timer, they can get boring rather quickly. We definitely wanted to expand the rewards into something more enticing, like monetary coupon rewards. We also considered gamifying the application more by incorporating a social aspect for students to compete with their friends, but we ran out of time and resources at the end of the project term to follow through with this idea. We would definitely at least attempt implementing both of these options to solidify the rewards system.</p>
+          <p><span class="accented">Whitelisting:</span> As mentioned earlier, the application only allows for studying using physical materials at the moment. Going forward, we definitely want to give students the option of still using their computer to study by designing a whitelist system in which they could designate certain websites related to studying as non-distractions. This way, productivity can be even further maximized and it can help for certain classes whose materials are all digital.</p>
+        </div>
+        <div class="project-section">
+          <h6>TOOLS</h6>
+          <div class="project-tool-row row">
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/html5.png" alt="HTML5">
+              <p>HTML5</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/css3.png" alt="CSS3">
+              <p>CSS3</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/javascript.png" alt="JS">
+              <p>JavaScript</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/jquery.png" alt="jQuery">
+              <p>jQuery</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/bootstrap.svg" alt="Bootstrap">
+              <p>Bootstrap</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/github.png" alt="GitHub">
+              <p>GitHub</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/heroku.png" alt="Heroku">
+              <p>Heroku</p>
+            </div>
+            <div class="col-lg-3 col-6 project-tool">
+              <img src="../images/icons/sketch.png" alt="Sketch">
+              <p>Sketch</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-section">
+          <a href="wordofhands.html">
+            <div class="project-button">
+              <p>NEXT CASE STUDY: <br><span>WORD OF HANDS</span></p>
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="my-fade-out">
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Nathaniel Qin, 2019</p>
+      <div>
+        <a href="https://www.facebook.com/nq2theResq" target="_blank">
+          <img src="../images/icons/facebook.svg" alt="facebook">
         </a>
-      </div>
-      <div class="affiliation" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <h1>AFFILIATION \\ <b>UCSD COGS 120</b></h1>
-        <hr>
-        <h2>COGS 120 is a course at UCSD called the Interaction Design Studio. I took this course under Philip Guo, a Human Computer Interaction professor at UCSD. The goal of this course is to teach students the individual parts of the design process by completing a quarter-long project. This project spanned September 2018 - December 2018.</h2>
-      </div>
-      <div class="project-row words">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">ROLES</h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom"><span class="title">User Interface Designer: </span>I designed the layout of the web pages with two goals of aesthetic design and usability in mind. I also conducted a few iterations of simple user testing and heuristic evaluation with my initial designs.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom"><span class="title">Front-End Developer: </span>I was the lead developer of the front end of our application, using HTML, CSS, and JavaScript. I also worked closely with Edward, our back-end developer, to implement web functionalities as well as clean interactions.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom"><span class="title">My Collaborators: </span>Edward Chen, Eunice Chan</h2>
-      </div>
-      <div class="project-row words">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">DESIGN GOALS</h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">We began the project with the broad goal of trying to enhance health. With preliminary needfinding and research, we discovered a need for students who are recovering from sickness to catch up with the work that they missed. With this in mind, we developed a design goal: to design a solution that helps students who are recovering from sickness regain their productivity.
-        </h2>
-      </div>
-      <div class="project-row words">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">DESIGN PROCESS</h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          In the first week of our project, we worked on narrowing the scope of our project down from the broad theme of enhancing health. To do this, we observed 3 different people who were recovering from illness and trying to catch up on their studies. With these observations, we were able to develop a list of possible needs to address. For example, here are a few that we found:
-          <ul>
-            <li>Unwell students need motivation to continue productivity when fatigued.</li>
-            <li>Unwell students need a way to catch up on lectures that are missed due to their illness.</li>
-            <li>Unwell students need an easy way relieve symptoms without interrupting their workflow.</li>
-          </ul>
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          With all of the needs compiled, a prominent theme revolving around productivity emerged. With this in mind, we created a storyboard for a character name Teegan who needs to catch up on his work after missing classes due to his illness. The main goal portrayed in the storyboard is Teegan's successful study session, and his satisfaction in being able to be so productive.
-        </h2>
-        <img class="horiz-img" src="../Media/focus/storyboard.png" data-aos="fade-up" data-aos-anchor-placement="top-bottom" />
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          Along with this storyboard, we also created an interactive paper prototype.
-        </h2>
-        <iframe src="https://www.youtube.com/embed/BD_c43mtddQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          After testing our prototypes for heuristic evaluations and overall usability, we decided to go forward with developing the app as a desktop web application. Why not mobile? We decided to design for desktop because there are already many existing methods that help eliminate distractions on a mobile phone, such as airplane mode, or do not disturb. Furthermore, we felt from our research and user testing that more people would utilize the app on their computers because of the design concept of requiring the user to stay on the screen. This would drain the battery of a mobile device significantly more quickly than a laptop or desktop computer.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          Going forward, we hit the grind of actually putting our designs into practice with web development technologies. As stated earlier, I led front-end development, and although my groupmates also assisted with this, I was the main person in charge of developing screens and various functionalities in HTML, CSS, and JavaScript.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          One big thing that was a core principle in our development of this application was iterative design. We made many iterations of our screens before landing on our final design, in varying degrees of fidelity. Through this project, I really came to see the value of iterations as a way to solidify the look and feel of our product. Below is a demonstration of the many iterations that we practiced on our home screen.
-        </h2>
-        <img class="horiz-img" src="../Media/focus/iterations.jpg" data-aos="fade-up" data-aos-anchor-placement="top-bottom" />
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          After solely developing our application for three weeks, we finally conducted a few initial user tests. From these tests, our biggest takeaway was that people were actually having trouble finding the arrows on the timer page that helped them set the time. This was something that our group had overlooked, since we had been staring at the same page for quite some time.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          With this feedback, we then conducted a form of qualitative A/B testing, in which we showed potential users different versions of the timer page and evaluated their feedback. After a few rounds of this, we finally landed on our final design.
-        </h2>
-        <img class="horiz-img" src="../Media/focus/oldnew.jpg" data-aos="fade-up" data-aos-anchor-placement="top-bottom" />
-        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          In our final design, we implemented two changes. First, we animated the arrows with a bouncing motion after discovering that the motion helped draw attention to it. Second, we softened the colors of the quick set buttons. This not only helps bridge cultural differences, as we can't assume that green signifies positivity for everyone, but also works to deflect immediate attention to the quick set buttons.
-        </h2>
-      </div>
-      <div class="project-row words" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <h1>SCREENS</h1>
-      </div>
-      <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="col-md-7">
-          <img src="../Media/focus/focus1.png">
-        </div>
-        <div class="col-md image-description left-align">
-          <h4>
-            <b>\ LANDING \</b>
-          </h4>
-          <p>
-            Users begin on this screen, which provides a quick overview of what our application does. Scrolling down, users can find more at a glance information, including how our application works at a high level, as well as information about each of our group members.
-          </p>
-        </div>
-      </div>
-      <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="col-md-7 order-md-2">
-          <img src="../Media/focus/focus2.png">
-        </div>
-        <div class="col-md order-md-1 image-description right-align">
-          <h4>
-            <b>\ HOME \</b>
-          </h4>
-          <p>
-            This screen serves as the home page for our application. From here, users can either begin a study session or visit the shop to purchase items to customize the look of the application.
-          </p>
-        </div>
-      </div>
-      <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="col-md-7">
-          <img src="../Media/focus/focus3.png">
-        </div>
-        <div class="col-md image-description left-align">
-          <h4>
-            <b>\ TIMER \</b>
-          </h4>
-          <p>
-            The timer is the main functionality of our application. Users can set the time for how long they want their session to be, up to a maximum of 2 hours. While they study, inspirational quotes will also fade in and out at the bottom of the screen.
-          </p>
-        </div>
-      </div>
-      <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="col-md-7 order-md-2">
-          <img src="../Media/focus/focus4.png">
-        </div>
-        <div class="col-md order-md-1 image-description right-align">
-          <h4>
-            <b>\ SHOP \</b>
-          </h4>
-          <p>
-            Here, users can spend their points to buy things to change the look of their application. Available for purchase are various color themes and animations the travel across the screen on the timer page as it runs.
-          </p>
-        </div>
-      </div>
-      <div class="row project-row words-and-image" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="col-md-7">
-          <img src="../Media/focus/focus5.png">
-        </div>
-        <div class="col-md image-description left-align">
-          <h4>
-            <b>\ PROFILE \</b>
-          </h4>
-          <p>
-            On the user's profile, they can see a history of all of their sessions, whether they were successes or failures.
-          </p>
-        </div>
-      </div><div class="project-row words">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">IN RETROSPECT</h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          Throughout the course of this project, I definitely wish that we had spent more time in lo-fidelity design, perhaps by creating an additional iteration of wireframes in a program like Balsamiq.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          I also wish that we could have spent more time on the look of our application, including making more extensive color themes, as well as more refined animations. Unfortunately, due to time constraints, I feel that these ideas were not executed to their full potential.
-        </h2>
-      </div>
-      <div class="project-row words">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">NEXT STEPS</h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          Going forward with this project, we've definitely begun to see the shortcoming of the incentives that we provide. None of the rewards are tangible, nor social, so they are barely enticing at best. Given more time, we had planned to implement a social aspect, in which users can add friends and view others' profiles to see which themes or animations they own. On top of this, we would have liked to implement a leaderboard to add an element of competition and gamification to provide stronger incentives for studying user our app.
-        </h2>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          We definitely also recognize that many students today need to use their computers to study, so when students navigate away from the timer to review lectures, this should not count as a distraction. Ideally, we'd implement a way to only count distractions if users navigate to certain websites that are not white-listed, which the user could also set themselves. This way, users can still study online without having their study session cancelled.
-        </h2>
-      </div>
-      <div class="project-row words" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <h1>TOOLS</h1>
-      </div>
-      <div class="row technologies">
-        <div class="col-12 col-sm-6">
-        <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <div class="col-4 tech-icon">
-            <img src="../Media/icons/html5.png">
-          </div>
-          <div class="col-8 tech-desc">
-            <h3>HTML5</h3>
-            <p class="proficient">proficient</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <div class="col-4 tech-icon">
-            <img src="../Media/icons/css3.png">
-          </div>
-          <div class="col-8 tech-desc">
-            <h3>CSS3</h3>
-            <p class="proficient">proficient</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <div class="col-4 tech-icon">
-            <img src="../Media/icons/javascript.png">
-          </div>
-          <div class="col-8 tech-desc">
-            <h3>Javascript</h3>
-            <p class="proficient">proficient</p>
-          </div>
-        </div>
-      </div>
-        <div class="col-12 col-sm-6">
-          <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="col-4 tech-icon">
-              <img src="../Media/icons/sketch.png">
-            </div>
-            <div class="col-8 tech-desc">
-              <h3>Sketch</h3>
-              <p class="proficient">proficient</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="row technology" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="col-4 tech-icon">
-              <img src="../Media/icons/jquery.png">
-            </div>
-            <div class="col-8 tech-desc">
-              <h3>jQuery</h3>
-              <p class="familiar">familiar</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-row" style="padding-top: 48px; padding-bottom: 48px">
-        <a class="project-link-anchor" href="../index.html#projects">
-          <div class="project-link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <p><< all projects</p>
-          </div>
+        <a href="https://www.linkedin.com/in/nathaniel-qin/" target="_blank">
+          <img src="../images/icons/linkedin.svg" alt="linkedin">
         </a>
-        <a class="project-link-anchor" href="word_of_hands.html">
-          <div class="project-link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <p>next project >></p>
-          </div>
+        <a href="https://github.com/nathaniel-qin" target="_blank">
+          <img src="../images/icons/github.svg" alt="github">
         </a>
-      </div>
-    </div>
-    <hr>
-  </div>
-
-  <!--footer-->
-  <footer id="footer">
-    <p>Nathaniel Qin <span class="title"><b>\\</b></span> (510) 364-1240 <span class="title"><b>\\</b></span> nathaniel.qin1@gmail.com</p>
-    <p>Find me on <a href="https://www.facebook.com/nq2theResq"><span style="font-weight: 400;">Facebook, <a href="https://www.linkedin.com/in/nathaniel-qin"><span style="font-weight: 400;">LinkedIn</span></a> and <a href="https://github.com/nathaniel-qin"><span style="font-weight: 400;">GitHub</span></a></p>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
-
-<script>
-  AOS.init({
-    duration: 1000
-  });
-</script>

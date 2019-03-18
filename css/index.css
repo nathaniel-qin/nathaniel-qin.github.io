@@ -1,0 +1,229 @@
+:target::before {
+  content: "";
+  display: block;
+  height: 68px;
+  margin-top: -68px;
+}
+
+.intro {
+  padding: 15% 10% 10%;
+  width: 70vw;
+  margin-left: auto;
+}
+
+.intro h1 {
+  font-size: 3.5em;
+}
+
+.intro h2 {
+  font-size: 1.75em;
+}
+
+p, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+}
+
+.my-projects {
+  background-color: white;
+  padding: 4%;
+}
+
+.my-projects h3 {
+  font-weight: 800;
+  font-size: 3em;
+  padding-bottom: 4%;
+}
+
+.my-projects h4 {
+  background-color: #D89700;
+  color: white;
+  padding: 1% 2%;
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: 8%;
+  border-left: 8px solid #936700;
+}
+
+.my-projects #projects h4 {
+  margin-top: 0;
+}
+
+.row {
+  margin: 2% -15px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  transition: all 0.25s ease;
+}
+
+.project:hover {
+  box-shadow: 0 0 10px #333;
+}
+
+.project:hover .project-body {
+  opacity: 1;
+}
+
+.project:hover .project-header {
+  padding: 3% 4%;
+}
+
+.project:hover .project-footer {
+  padding: 5% 4%;
+}
+
+.project-header {
+  background-color: black;
+  padding: 2% 4%;
+  transition: all 0.25s ease;
+}
+
+.project-title {
+  font-size: 2em;
+  color: white;
+  font-weight: 300;
+}
+
+.project-affiliation {
+  font-size: 0.95em;
+  font-weight: 200;
+  text-align: left;
+  color: white;
+}
+
+.project-body {
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.25s ease;
+  opacity: 0.9;
+}
+
+.project-footer {
+  transition: all 0.25s ease;
+  background-color: #F9BF01;
+  padding: 4%;
+}
+
+.project-type {
+  font-size: 0.95em;
+  color: white;
+  text-align: right;
+}
+
+.project-date {
+  color: black;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-align: right;
+}
+
+#focus {
+  background-image: url('../images/focus/focus.png');
+}
+
+#wordofhands {
+  background-image: url('../images/woh/woh.png');
+}
+
+.small-project {
+  height: 300px;
+}
+
+.small-project .project-title {
+  font-size: 1.5em;
+}
+
+.small-project .project-affiliation {
+  font-size: 0.9em;
+}
+
+.small-project .project-type {
+  font-size: 0.9em;
+}
+
+#klema {
+  background-image: url('../images/small/klema.png');
+}
+
+#carpool {
+  background-image: url('../images/small/carpool.png');
+}
+
+#meme {
+  background-image: url('../images/small/meme.png');
+}
+
+@media screen and (max-width: 767px) {
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .intro {
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    padding: 30% 15% 15%;
+  }
+
+  .project {
+    margin: 4%;
+    height: 400px;
+  }
+
+  .my-projects {
+    border-top: 5px dotted #CCC;
+  }
+
+  .my-projects h3 {
+    font-size: 3em;
+    margin: 4%;
+  }
+
+  .my-projects h4 {
+    font-size: 2em;
+    margin: 16% 4% 0;
+  }
+
+  .project-title {
+    font-size: 1.75em;
+  }
+
+  .small-project {
+    height: 200px;
+    margin: 8% 0;
+  }
+
+  .left {
+    margin-left: 8%;
+  }
+
+  .right {
+    margin-right: 8%;
+  }
+
+  .small-project .project-title {
+    font-size: 1.25em;
+  }
+
+  .small-project .project-affiliation {
+    font-size: 0.8em;
+  }
+
+  .small-project .project-type {
+    font-size: 0.8em;
+  }
+}

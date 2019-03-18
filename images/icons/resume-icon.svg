@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M50,30.31044 C47.1736088,30.31044 44.8823529,32.6129743 44.8823529,35.4532971 C44.8823529,38.29362 47.1736088,40.5961543 50,40.5961543 C52.8263912,40.5961543 55.1176471,38.29362 55.1176471,35.4532971 C55.1176471,32.6129743 52.8263912,30.31044 50,30.31044 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M50,42.31044 C44.8823529,42.31044 38.9117647,44.0247257 38.9117647,50.8818686 L61.0882353,50.8818686 C61.0882353,44.0247257 55.1176471,42.31044 50,42.31044 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M33,62.5 L67,62.5" id="Path-10" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" stroke-linecap="round"></path>
+        <path d="M33,70.5 L67,70.5" id="Path-10-Copy" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" stroke-linecap="round"></path>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" x="22.5" y="13.5" width="55" height="75" rx="6"></rect>
+    </g>
+</svg>
