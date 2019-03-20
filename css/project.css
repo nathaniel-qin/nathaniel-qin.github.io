@@ -67,20 +67,33 @@
   margin: 4% 0 0;
 }
 
-.project-section h6 {
+.project-section h5 {
   background-color: #D89700;
   color: white;
   padding: 1% 2%;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.75em;
   border-left: 8px solid #936700;
 }
 
+.project-section h6 {
+  background-color: #555;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25em;
+  padding: 1%;
+  display: inline-block;
+}
+
 .project-section p {
-  color: #333;
+  color: black;
   font-size: 1em;
   margin: 0;
   padding-bottom: 1rem;
+}
+
+.project-section h5 + * {
+  margin-top: 1rem;
 }
 
 .accented {
@@ -226,7 +239,7 @@
 }
 
 .project-section .project-quote-words {
-  color: #888;
+  color: #555;
   text-align: center;
   font-size: 1.25em;
   font-weight: 200;
@@ -267,7 +280,7 @@
   padding-bottom: 0.25rem;
   text-indent: -32px;
   margin-right: -32px;
-  color: #888;
+  color: #555;
   font-weight: 200;
 }
 
@@ -396,6 +409,10 @@
 
   .project-section {
     margin: 8% 8% 0;
+  }
+
+  .project-section h6 {
+    padding: 2%;
   }
 
   .project-section:last-of-type {
