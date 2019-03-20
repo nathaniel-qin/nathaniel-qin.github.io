@@ -1,3 +1,7 @@
+body {
+  background-image: url('../images/bg1.png');
+}
+
 :target::before {
   content: "";
   display: block;
