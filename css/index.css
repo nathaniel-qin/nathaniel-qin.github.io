@@ -37,12 +37,6 @@ p, h6 {
   padding: 4%;
 }
 
-.my-projects h3 {
-  font-weight: 800;
-  font-size: 3em;
-  padding-bottom: 4%;
-}
-
 .my-projects h4:first-of-type {
   margin: 0;
 }
@@ -183,7 +177,7 @@ p, h6 {
 
   .intro {
     width: 100vw;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 30% 15% 15%;
   }
 
@@ -193,7 +187,6 @@ p, h6 {
   }
 
   .my-projects {
-    border-top: 5px dotted #CCC;
   }
 
   .my-projects h3 {
@@ -203,6 +196,10 @@ p, h6 {
 
   .my-projects h4 {
     font-size: 2em;
+    margin: 16% 4% 0;
+  }
+
+  .my-projects h4:first-of-type {
     margin: 16% 4% 0;
   }
 
