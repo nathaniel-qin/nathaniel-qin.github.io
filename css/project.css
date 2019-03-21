@@ -2,6 +2,7 @@
   padding: 4%;
   background-color: white;
   margin-top: 68px;
+  z-index: 100;
 }
 
 [class^="col-"] {
