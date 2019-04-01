@@ -161,6 +161,10 @@ p, h6 {
   background-image: url('../images/small/carpool.png');
 }
 
+#swap {
+  background-image: url('../images/small/swap.png');
+}
+
 #meme {
   background-image: url('../images/small/meme.png');
 }
