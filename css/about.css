@@ -3,13 +3,13 @@
 }
 
 .my-about {
-  margin-top: 68px;
-  padding: 4%;
+  margin-top: 100px;
+  padding: 2%;
   background-color: white;
 }
 
 .about-section {
-  background-color: #F9BF01;
+  background-color: white;
   margin: 0;
 }
 
@@ -52,19 +52,21 @@
   margin: 0;
   padding: 4%;
   flex: 1;
+  background-color: white;
 }
 
 #my-picture {
   background-image: url('../images/me.jpg');
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 700px;
 }
 
 #my-picture img {
   opacity: 0;
   width: 100%;
-  height: 100%;
+  width: 100%;
 }
 
 .my-download {
@@ -82,11 +84,11 @@
 }
 
 .my-download:hover {
-  background-color: white;
+  background-color: #F9BF01;
 }
 
 .my-download:hover p {
-  color: #D89700;
+  color: white;
 }
 
 .my-download:hover .fa-file-download {
@@ -112,12 +114,34 @@
 }
 
 @media screen and (max-width: 991px) {
+
   #my-picture {
-    height: 500px;
+    height: 400px;
   }
 }
 
 @media screen and (max-width: 767px) {
+
+  .my-about {
+    margin-top: 68px;
+  }
+
+  .about-summary {
+    background-color: #F9BF01;
+  }
+
+  .my-download-a {
+    background-color: #F9BF01;
+  }
+
+  .my-download:hover {
+    background-color: white;
+  }
+
+  .my-download:hover p {
+    color: #D89700;
+  }
+
   .container {
     width: 100%;
   }
@@ -127,6 +151,6 @@
   }
 
   #my-picture {
-    height: 450px;
+    height: 350px;
   }
 }
