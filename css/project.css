@@ -64,6 +64,22 @@
   background-image: url('../images/woh/woh_banner.png');
 }
 
+#klema {
+  background-image: url('../images/klema/klema_banner.png');
+}
+
+#carpool {
+  background-image: url('../images/carpool/carpool_banner.png');
+}
+
+#swap {
+  background-image: url('../images/swap/swap_banner.png');
+}
+
+#meme {
+  background-image: url('../images/meme/meme_banner.png');
+}
+
 .project-section {
   margin: 4% 0 0;
 }
@@ -387,7 +403,8 @@
   .project-title {
     height: 150px;
     padding: 4% 12%;
-    border-bottom: 16px solid #F9BF01;
+    border-bottom: 8px solid #F9BF01;
+    border-bottom-left-radius: 20%;
   }
 
   .project-title .project-name {
