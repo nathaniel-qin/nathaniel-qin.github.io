@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
     <link rel="icon" href="images/icons/icon-black.png">
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,800" rel="stylesheet">
@@ -53,7 +54,7 @@
     </nav>
     <main>
       <div class="intro">
-        <h1>hi, i'm nathaniel.</h1>
+        <h1><span class="animated">h</span><span class="animated">i</span><span class="animated">,</span> <span class="animated">i</span><span class="animated">'</span><span class="animated">m</span> <span class="animated">n</span><span class="animated">a</span><span class="animated">t</span><span class="animated">h</span><span class="animated">a</span><span class="animated">n</span><span class="animated">i</span><span class="animated">e</span><span class="animated">l</span><span class="animated">.</span></h1>
         <h2>i'm a ux engineer who appreciates the duality between carefully crafting a design and diligently developing it to fruition.</h2>
       </div>
       <a id="projects" name="projects"></a>
@@ -176,12 +177,30 @@
     </footer>
     <script>
       window.onscroll = function(e) {
-        var rect = document.getElementById('my-projects').getBoundingClientRect();
+        let rect = document.getElementById('my-projects').getBoundingClientRect();
         if(rect.top - 68 <= 0) {
           document.getElementById('nav-projects').classList.add('my-active');
         } else {
           document.getElementById('nav-projects').classList.remove('my-active');
         }
+      }
+
+      // animations
+      let letters = document.getElementsByClassName('animated');
+      let s = 0;
+      let s2 = 0;
+      setTimeout(() => {
+        for(let j of letters) {
+          j.classList.remove('drop-in');
+          j.style.animationDelay = `${s2}s`;
+          j.classList.add('bulge');
+          s2 += 0.05;
+        }
+      }, 3000);
+      for (let i of letters) {
+        i.style.animationDelay = `${s}s`;
+        i.classList.add('drop-in');
+        s += 0.1;
       }
     </script>
   </body>
