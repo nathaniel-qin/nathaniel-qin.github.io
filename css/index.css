@@ -9,6 +9,10 @@ body {
   margin-top: -68px;
 }
 
+.desktop {
+  display: none;
+}
+
 .intro {
   padding: 15% 10% 10%;
   width: 70vw;
@@ -173,6 +177,13 @@ p, h6 {
 
 #meme {
   background-image: url('../images/small/meme.png');
+}
+
+@media screen and (max-width: 991px) {
+  
+  .desktop {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 767px) {

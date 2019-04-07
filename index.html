@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" class="no-fouc">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136512847-1"></script>
@@ -28,6 +28,7 @@
     <link rel="icon" href="images/icons/icon-black.png">
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,800" rel="stylesheet">
+    <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
@@ -54,7 +55,7 @@
     </nav>
     <main>
       <div class="intro">
-        <h1><span class="animated">h</span><span class="animated">i</span><span class="animated">,</span> <span class="animated">i</span><span class="animated">'</span><span class="animated">m</span> <span class="animated">n</span><span class="animated">a</span><span class="animated">t</span><span class="animated">h</span><span class="animated">a</span><span class="animated">n</span><span class="animated">i</span><span class="animated">e</span><span class="animated">l</span><span class="animated">.</span></h1>
+        <h1><span class="my-animated">h</span><span class="my-animated">i</span><span class="my-animated">,</span> <span class="my-animated">i</span><span class="my-animated">'</span><span class="my-animated">m</span> <br class="desktop"><span class="my-animated">n</span><span class="my-animated">a</span><span class="my-animated">t</span><span class="my-animated">h</span><span class="my-animated">a</span><span class="my-animated">n</span><span class="my-animated">i</span><span class="my-animated">e</span><span class="my-animated">l</span><span class="my-animated">.</span></h1>
         <h2>i'm a ux engineer who appreciates the duality between carefully crafting a design and diligently developing it to fruition.</h2>
       </div>
       <a id="projects" name="projects"></a>
@@ -175,33 +176,5 @@
           <img src="images/icons/github.svg" alt="github">
         </a>
     </footer>
-    <script>
-      window.onscroll = function(e) {
-        let rect = document.getElementById('my-projects').getBoundingClientRect();
-        if(rect.top - 68 <= 0) {
-          document.getElementById('nav-projects').classList.add('my-active');
-        } else {
-          document.getElementById('nav-projects').classList.remove('my-active');
-        }
-      }
-
-      // animations
-      let letters = document.getElementsByClassName('animated');
-      let s = 0;
-      let s2 = 0;
-      setTimeout(() => {
-        for(let j of letters) {
-          j.classList.remove('drop-in');
-          j.style.animationDelay = `${s2}s`;
-          j.classList.add('bulge');
-          s2 += 0.05;
-        }
-      }, 3000);
-      for (let i of letters) {
-        i.style.animationDelay = `${s}s`;
-        i.classList.add('drop-in');
-        s += 0.1;
-      }
-    </script>
   </body>
 </html>

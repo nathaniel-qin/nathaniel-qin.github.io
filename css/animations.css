@@ -1,29 +1,94 @@
 @keyframes dropIn {
   from {
-    transform: rotateZ(45deg) translateY(-200px);
+    transform: translateY(-200px);
     opacity: 0;
   }
   to {
-    transform: rotateZ(0) translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes bulge {
   0% {
-    font-size: 100%;
+    transform: scale(1);
   }
   50% {
-    font-size: 150%;
+    transform: scale(1.2);
   }
   100% {
-    font-size: 100%;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerBulge {
+  0% {
+    transform: scale(0);
+    box-shadow: unset;
+  }
+  60% {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px black;
+  }
+  80% {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px black;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: unset;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: unset;
+  }
+  30% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: unset;
+  }
+  38% {
+    transform: rotateZ(3deg) scale(1.1);
+    box-shadow: 0 0 10px gray;
+  }
+  46% {
+    transform: rotateZ(-3deg) scale(1.1);
+    box-shadow: 0 0 10px gray;
+  }
+  54% {
+    transform: rotateZ(3deg) scale(1.1);
+    box-shadow: 0 0 10px gray;
+  }
+  62% {
+    transform: rotateZ(-3deg) scale(1.1);
+    box-shadow: 0 0 10px gray;
+  }
+  70% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: unset;
+  }
+  100% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: unset;
   }
 }
 
 .drop-in {
   animation-name: dropIn;
-  animation-duration: 1.5s;
+  animation-duration: 1.25s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   display: inline-block;
@@ -34,6 +99,29 @@
   animation-name: bulge;
   animation-duration: 0.5s;
   animation-timing-function: ease;
-  animation-fill-mode: backwards;
-  line-height: 0em;
+  animation-fill-mode: forwards;
+}
+
+.fade-up {
+  animation-name: fadeUp;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  opacity: 0;
+}
+
+.header-bulge {
+  animation-name: headerBulge;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.wiggle {
+  animation-name: wiggle;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }

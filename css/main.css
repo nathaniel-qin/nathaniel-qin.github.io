@@ -24,6 +24,10 @@ a:hover {
   color: unset;
 }
 
+.no-fouc {
+  display: none;
+}
+
 .navbar-dark .navbar-toggler {
   border: unset;
   font-size: 1.5em;
