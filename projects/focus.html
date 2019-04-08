@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/project.css" type="text/css">
     <link rel="stylesheet" href="../css/animations.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="icon" href="../images/icons/icon-black.png">
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,800" rel="stylesheet">
@@ -77,7 +79,7 @@
         </div>
         <div class="project-section">
           <h5>DESIGN GOALS</h5>
-          <h6>Needfinding</h6>
+          <h6 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="750">Needfinding</h6>
           <p>At the start of our project term, my team was tasked with designing an application that enhanced health. For our preliminary needfinding, we observed students recovering from illness as they attempted to catch up on school work. This led to the discovery that they encountered a lot of distractions due to their condition, such as the need to drink water, cough, blow their nose, etc. On top of this, they were distracted by ordinary distractions as well, like notifications from social media or other websites. Below are a few examples of the needs we identified from our observations.</p>
           <div class="project-list">
             <p class="project-list-item">Unwell students need motivation to continue productivity when fatigued from illness.</p>
@@ -94,42 +96,42 @@
         <div class="project-section">
           <h5>FINAL SCREENS</h5>
           <div class="center-project">
-            <img src="../images/focus/focus_screen_1.png">
+            <img src="../images/focus/focus_screen_1.png" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p><span class="large-accented">Home</span><br>The application has two main functionalities: the timer and the shop. On this home page, users have these two main options to navigate to. They can either use the timer, which is equivalent to starting a study session, or go to the shop, in which they can spend points they earned from studying.</p>
           </div>
           <div class="center-project">
-            <img src="../images/focus/focus_screen_2.png">
+            <img src="../images/focus/focus_screen_2.png" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p><span class="large-accented">Timer</span><br>The timer serves as the main study functionality of our application. Here, users can set how long they want to study for and launch the timer. If users navigate away from this page (by being distracted), their study session will be cancelled and will not return any rewards.</p>
           </div>
           <div class="center-project">
-            <img src="../images/focus/focus_screen_3.png">
+            <img src="../images/focus/focus_screen_3.png" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p><span class="large-accented">Shop</span><br>From their study sessions, users can earn points to spend in this shop. As of the project's end date, the shop sells color themes and animations, but can easily be expanded to better rewards, including those monetary in nature.</p>
           </div>
           <div class="center-project">
-            <img src="../images/focus/focus_screen_4.png">
+            <img src="../images/focus/focus_screen_4.png" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p><span class="large-accented">Profile</span><br>On each user's personal profile, they can see the history of their study sessions as well, including if they were successes or failures.</p>
           </div>
         </div>
         <div class="project-section">
           <h5>DESIGN PROCESS</h5>
-          <h6>Storyboarding</h6>
+          <h6 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="750">Storyboarding</h6>
           <p>When we began to brainstorm ideas for our application, we wanted to first solidify not only our target audience, but also the kind of flow that our application would be able to provide. To accomplish this, we created a few storyboards. The ultimate purpose of these storyboards were to demonstrate the difficult situations our users face to the type of satisfaction they would receive from using our application. We wanted to clearly show this transition from start to finish, facilitated by our application. Below is an example of a storyboard we constructed.</p>
           <div class="project-image">
-            <img src="../images/focus/focus_1.png" alt="Focus Storyboard">
+            <img src="../images/focus/focus_1.png" alt="Focus Storyboard" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p class="project-image-caption"><em>A storyboard outlining the specific way that our application would help alleviate stress. We wanted to show the process of incentivizing successful study sessions and the satisfaction resulting from that.</em></p>
           </div>
-          <h6>Paper Prototyping</h6>
+          <h6 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="750">Paper Prototyping</h6>
           <p>From our storyboard, we knew that we wanted to design an application that would, at its very core, function as a point-earning timer with a shop to go along with it. Having solidified this as our main design idea, we went forward with creating a paper prototype to demonstrate our ideas. The paper prototype is not meant to showcase detailed UI decisions, but rather the general flow of the application as well as broader interactions.</p>
           <div class="project-video">
             <iframe src="https://www.youtube.com/embed/BD_c43mtddQ" frameborder="0" allowfullscreen></iframe>
           </div>
-          <h6>Design Decisions</h6>
+          <h6 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="750">Design Decisions</h6>
           <p>The final product definitely deviated from the original design that was outlined in the paper prototype. However, that's a normal part of the design process. The initial design can't be expected to be perfect, and improvements are made naturally as iterations continue. One stark difference is the platform for which we designed the web application. Our paper prototype is designed for mobile, while our final product is designed for desktop.</p>
           <p><span class="accented">So why did we decide to design for desktop instead of mobile?</span> After considering all of our possibilities, we concluded that the application would just be overall more useful on desktop. Although we tend to receive more mobile distractions, There are already many existing solutions for reducing these, such as Do Not Disturb or airplane mode. Furthermore, because most studying does not require a mobile device, students could afford to even shut off their phone or place it in a different room. For desktop devices, notifications can often run free and cause many distractions. Originally, we also planned to allow users to whitelist certain websites so that they could utilize the Internet to study while still avoiding more distracting social media. Given our time constraints, we weren't able to implement this functionality, but it would have provided a much-needed solution for desktop distractions. Overall, we felt that there was a higher need for a desktop study aid to reduce distractions in that specific sphere.</p>
-          <h6>User Testing</h6>
+          <h6 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="750">User Testing</h6>
           <p>Of course, the platform is not the only thing that changed throughout the course of this project. The design of the website underwent many changes as well which can all be attributed to iterations, some of which acquired through user testing.</p>
           <div class="project-image">
-            <img src="../images/focus/focus_2.jpg" alt="Focus Iterations">
+            <img src="../images/focus/focus_2.jpg" alt="Focus Iterations" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p class="project-image-caption"><em>A visual demonstration of the numerous iterations of design we went through. Although we accelerated to high-fidelity designs rather quickly, we still completed a few iterations in the browser.</em></p>
           </div>
           <p>Having all of our designs and interactions in place, we conducted a few rounds of user testing with some potential users of our application. The testing sessions were extremely helpful because all of the members on our team had been staring at the application for hours each day. As a result, we'd become somewhat numb to its design, and by transition, its design flaws. The user testing sessions helped draw attention to some of the largest breakdowns that users could encounter.</p>
@@ -139,7 +141,7 @@
           </div>
           <p>That's a rather large flaw. The timer is part of our application's core functionality, and if it wasn't usable, then the application itself might as well be unusable. After debriefing with this tester for a little while, we discovered that the quick set buttons were drawing too much attention, and the individual arrows were difficult to see. Using this feedback, we altered our designs in an attempt to smooth out the errors. To validate our design, we also conducted a form of qualititative A/B testing by showing potential users both versions of the timer and evaluating how quickly and easily they were able to set the timer in each scenario.</p>
           <div class="project-image">
-            <img src="../images/focus/focus_3.jpg" alt="Focus Timer Redesign">
+            <img src="../images/focus/focus_3.jpg" alt="Focus Timer Redesign" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <p class="project-image-caption"><em>A comparison of our old and new timer pages. The colors of the quick set buttons were changed to be less attention-grabbing. Also, though not visible in this still image, we added a bouncing animation to the arrows in the hopes that the motion would draw users' attentions.</em></p>
           </div>
         </div>
@@ -220,5 +222,8 @@
           <img src="../images/icons/github.svg" alt="github">
         </a>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

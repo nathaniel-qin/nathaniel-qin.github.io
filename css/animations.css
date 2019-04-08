@@ -61,19 +61,19 @@
     box-shadow: unset;
   }
   38% {
-    transform: rotateZ(3deg) scale(1.1);
+    transform: rotateZ(2deg) scale(1.05);
     box-shadow: 0 0 10px gray;
   }
   46% {
-    transform: rotateZ(-3deg) scale(1.1);
+    transform: rotateZ(-2deg) scale(1.05);
     box-shadow: 0 0 10px gray;
   }
   54% {
-    transform: rotateZ(3deg) scale(1.1);
+    transform: rotateZ(2deg) scale(1.05);
     box-shadow: 0 0 10px gray;
   }
   62% {
-    transform: rotateZ(-3deg) scale(1.1);
+    transform: rotateZ(-2deg) scale(1.05);
     box-shadow: 0 0 10px gray;
   }
   70% {
@@ -113,7 +113,7 @@
 
 .header-bulge {
   animation-name: headerBulge;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
