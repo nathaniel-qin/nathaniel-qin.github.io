@@ -224,8 +224,15 @@
     </footer>
     <script>
       window.onload = () => {
-        AOS.init();
         document.getElementsByClassName('no-fouc')[0].classList.remove('no-fouc');
+      }
+
+      let init = false;
+      window.onscroll = () => {
+        if(!init) {
+          AOS.init();
+          init = true;
+        }
       }
     </script>
   </body>
