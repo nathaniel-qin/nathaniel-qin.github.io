@@ -131,6 +131,18 @@
     background-color: #F9BF01;
   }
 
+  .my-download {
+    background-color: black;
+  }
+
+  .my-download p {
+    color: white;
+  }
+
+  .my-download .fa-file-download {
+    color: white;
+  }
+
   .my-download-a {
     background-color: #F9BF01;
   }
@@ -141,6 +153,10 @@
 
   .my-download:hover p {
     color: #D89700;
+  }
+
+  .my-download:hover .fa-file-download {
+    color: black;
   }
 
   .container {

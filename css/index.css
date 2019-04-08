@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('../images/bg1.png');
 }
@@ -85,17 +89,16 @@ p, h6 {
 }
 
 .project:hover .project-header {
-  padding: 3% 4%;
 }
 
 .project:hover .project-footer {
-  padding: 5% 4%;
 }
 
 .project-header {
   background-color: black;
   padding: 2% 4%;
   transition: all 0.25s ease;
+  z-index: 1;
 }
 
 .project-title {
@@ -180,7 +183,7 @@ p, h6 {
 }
 
 @media screen and (max-width: 991px) {
-  
+
   .desktop {
     display: inline-block;
   }

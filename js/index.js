@@ -23,11 +23,34 @@ window.onload = () => {
   }
 
   // animation on greeting
-  let letters = document.getElementsByClassName('my-animated');
+  let letters = document.getElementsByClassName('my-animated-greeting');
   let s = 0;
   for(let j of letters) {
     j.style.animationDelay = `${s}s`;
     j.classList.add('drop-in');
     s += 0.1;
+  }
+
+  // add mouseover listener to each project for hover animations
+  let projects = document.getElementsByClassName('project');
+  for(let i of projects) {
+    i.addEventListener('mouseenter', (e) => {
+      let lets = i.getElementsByClassName('project-title-letter');
+      let s2 = 0;
+      for(let j of lets) {
+        j.style.animationDelay = `${s2}s`;
+        j.classList.add('shimmer');
+        s2 += 0.1;
+      }
+    });
+    i.addEventListener('mouseleave', (e) => {
+      let lets = i.getElementsByClassName('project-title-letter');
+      let s2 = 0;
+      for(let j of lets) {
+        j.style.animationDelay = `${s2}s`;
+        j.classList.remove('shimmer');
+        s2 += 0.1;
+      }
+    });
   }
 }
