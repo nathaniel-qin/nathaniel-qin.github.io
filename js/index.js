@@ -34,23 +34,32 @@ window.onload = () => {
   // add mouseover listener to each project for hover animations
   let projects = document.getElementsByClassName('project');
   for(let i of projects) {
-    i.addEventListener('mouseenter', (e) => {
+    i.addEventListener('mouseenter', () => {
       let lets = i.getElementsByClassName('project-title-letter');
       let s2 = 0;
       for(let j of lets) {
         j.style.animationDelay = `${s2}s`;
         j.classList.add('shimmer');
-        s2 += 0.1;
+        s2 += 0.05;
+        if(j === lets[lets.length-1]) {
+          j.addEventListener('animationend', showFade);
+        }
       }
     });
     i.addEventListener('mouseleave', (e) => {
       let lets = i.getElementsByClassName('project-title-letter');
-      let s2 = 0;
       for(let j of lets) {
-        j.style.animationDelay = `${s2}s`;
         j.classList.remove('shimmer');
-        s2 += 0.1;
+        if(j === lets[lets.length-1]) {
+          j.removeEventListener('animationend', showFade);
+          i.getElementsByClassName('project-body')[0].getElementsByTagName('div')[0].style.opacity = '0';
+        }
       }
     });
+  }
+
+  // function for project hover fade in
+  function showFade() {
+    this.parentNode.parentNode.parentNode.getElementsByClassName('project-body')[0].getElementsByTagName('div')[0].style.opacity = '1';
   }
 }

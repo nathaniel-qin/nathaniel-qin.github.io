@@ -89,15 +89,15 @@
 @keyframes shimmer {
   0% {
     color: white;
-    transform: translateY(0);
+    transform: scaleX(1);
   }
   50% {
     color: #FFDA60;
-    transform: translateY(-3px);
+    transform: scaleX(0);
   }
   100% {
     color: white;
-    transform: translateY(0);
+    transform: scaleX(1);
   }
 }
 
@@ -143,7 +143,7 @@
 
 .shimmer {
   animation-name: shimmer;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   display: inline-block;
