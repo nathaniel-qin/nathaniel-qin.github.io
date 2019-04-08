@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" class="no-fouc">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136512847-1"></script>
@@ -223,7 +223,10 @@
         </a>
     </footer>
     <script>
-      AOS.init();
+      window.onload = () => {
+        AOS.init();
+        document.getElementsByClassName('no-fouc')[0].classList.remove('no-fouc');
+      }
     </script>
   </body>
 </html>

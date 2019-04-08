@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = () => {
   document.getElementsByClassName('no-fouc')[0].classList.remove('no-fouc');
 
   let navActive = false;
