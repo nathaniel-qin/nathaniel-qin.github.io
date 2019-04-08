@@ -4,7 +4,7 @@ A static website containing my portfolio of design projects.
 
 ## Usage
 
-Check it out at the [github page](https://nathaniel-qin.github.io).
+Check it out at the [webpage](https://nathanielqin.com).
 
 You are welcome to clone this repository if you want to play with my code.
 
@@ -13,4 +13,4 @@ You are welcome to clone this repository if you want to play with my code.
 This project uses:
 * [Bootstrap 4](https://getbootstrap.com/)
 * [Animate on Scroll](https://michalsnik.github.io/aos/)
-* [jQuery](https://jquery.com/)
+* [FontAwesome](https://fontawesome.com/)
