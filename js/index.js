@@ -45,6 +45,9 @@ window.onload = () => {
           j.addEventListener('animationend', showFade);
         }
       }
+      let footer = i.getElementsByClassName('project-footer')[0];
+      footer.classList.add('flip');
+
     });
     i.addEventListener('mouseleave', (e) => {
       let lets = i.getElementsByClassName('project-title-letter');
@@ -53,8 +56,11 @@ window.onload = () => {
         if(j === lets[lets.length-1]) {
           j.removeEventListener('animationend', showFade);
           i.getElementsByClassName('project-body')[0].getElementsByTagName('div')[0].style.opacity = '0';
+          i.getElementsByClassName('project-footer')[0].style.backgroundColor = '#F9BF01';
         }
       }
+      let footer = i.getElementsByClassName('project-footer')[0];
+      footer.classList.remove('flip');
     });
   }
 

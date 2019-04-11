@@ -101,6 +101,21 @@
   }
 }
 
+@keyframes flip {
+  0% {
+    transform: scaleY(1);
+    background-color: #F9BF01;
+  }
+  50% {
+    transform: scaleY(-1);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scaleY(1);
+    background-color: #F9BF01;
+  }
+}
+
 .drop-in {
   animation-name: dropIn;
   animation-duration: 1.25s;
@@ -147,4 +162,11 @@
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   display: inline-block;
+}
+
+.flip {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
