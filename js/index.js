@@ -45,8 +45,6 @@ window.onload = () => {
           j.addEventListener('animationend', showFade);
         }
       }
-      let footer = i.getElementsByClassName('project-footer')[0];
-      footer.classList.add('flip');
 
     });
     i.addEventListener('mouseleave', (e) => {
@@ -59,8 +57,6 @@ window.onload = () => {
           i.getElementsByClassName('project-footer')[0].style.backgroundColor = '#F9BF01';
         }
       }
-      let footer = i.getElementsByClassName('project-footer')[0];
-      footer.classList.remove('flip');
     });
   }
 
