@@ -6,6 +6,17 @@ body {
   background-image: url('../images/bg1.png');
 }
 
+body::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 :target::before {
   content: "";
   display: block;
@@ -83,7 +94,6 @@ p, h6 {
 
 .project:hover {
   box-shadow: 0 0 10px #333;
-  background-color: #F9BF01;
 }
 
 .project:hover .project-body {
@@ -116,7 +126,7 @@ p, h6 {
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.25s ease;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
 .project-body div {
@@ -160,11 +170,15 @@ p, h6 {
 }
 
 #focus {
-  background-image: url('../images/focus/focus.jpg');
+  background-image: url('../images/focus/focus.png');
 }
 
 #wordofhands {
-  background-image: url('../images/woh/woh.jpg');
+  background-image: url('../images/woh/woh.png');
+}
+
+#apm {
+  background-image: url('../images/apm/apm.png');
 }
 
 .small-project {
