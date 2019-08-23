@@ -39,7 +39,7 @@
 }
 
 .project-title .project-type {
-  color: #DDD;
+  color: #ddd;
   font-size: 1.25em;
   font-weight: 200;
   flex: 1;
@@ -51,33 +51,37 @@
 }
 
 .project-title .project-date {
-  color: #DDD;
+  color: #ddd;
   font-size: 1em;
   font-weight: 200;
 }
 
+#apm {
+  background-image: url("../images/apm/apm_banner.png");
+}
+
 #focus {
-  background-image: url('../images/focus/focus_banner.png');
+  background-image: url("../images/focus/focus_banner.png");
 }
 
 #woh {
-  background-image: url('../images/woh/woh_banner.png');
+  background-image: url("../images/woh/woh_banner.png");
 }
 
 #klema {
-  background-image: url('../images/klema/klema_banner.png');
+  background-image: url("../images/klema/klema_banner.png");
 }
 
 #carpool {
-  background-image: url('../images/carpool/carpool_banner.png');
+  background-image: url("../images/carpool/carpool_banner.png");
 }
 
 #swap {
-  background-image: url('../images/swap/swap_banner.png');
+  background-image: url("../images/swap/swap_banner.png");
 }
 
 #meme {
-  background-image: url('../images/meme/meme_banner.png');
+  background-image: url("../images/meme/meme_banner.png");
 }
 
 .project-section {
@@ -85,7 +89,7 @@
 }
 
 .project-section h5 {
-  background-color: #D89700;
+  background-color: #d89700;
   color: white;
   padding: 1% 2%;
   font-weight: 600;
@@ -114,13 +118,13 @@
 }
 
 .accented {
-  color: #D89700;
+  color: #d89700;
   font-weight: 800;
   font-size: 1.05em;
 }
 
 .large-accented {
-  color: #D89700;
+  color: #d89700;
   font-weight: 800;
   font-size: 1.5em;
 }
@@ -185,7 +189,7 @@
 }
 
 .project-section .left-project p {
-  border-left: 5px solid #F9BF01;
+  border-left: 5px solid #f9bf01;
   text-align: left;
 }
 
@@ -194,7 +198,7 @@
 }
 
 .project-section .right-project p {
-  border-right: 5px solid #F9BF01;
+  border-right: 5px solid #f9bf01;
   text-align: right;
 }
 
@@ -212,7 +216,7 @@
 
 .project-section .center-project p {
   margin-bottom: 2em;
-  border-left: 5px solid #F9BF01;
+  border-left: 5px solid #f9bf01;
   padding: 2%;
   margin-top: 1rem;
 }
@@ -238,7 +242,7 @@
 
 .project-section .project-callout div hr {
   width: 100%;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   border-radius: 20%;
 }
 
@@ -246,7 +250,7 @@
   font-size: 1.5em;
   color: black;
   text-align: center;
-  font-family: 'Alegreya', sans-serif;
+  font-family: "Alegreya", sans-serif;
   padding: 0;
 }
 
@@ -263,15 +267,15 @@
 }
 
 .project-section .project-quote-words::before {
-  content: "\"";
-  color: #F9BF01;
+  content: '"';
+  color: #f9bf01;
   margin-right: 1%;
   font-weight: 800;
 }
 
 .project-section .project-quote-words::after {
-  content: "\"";
-  color: #F9BF01;
+  content: '"';
+  color: #f9bf01;
   margin-left: 1%;
   font-weight: 800;
 }
@@ -284,7 +288,7 @@
 
 .project-section .project-quote-citation::before {
   content: "—";
-  color: #F9BF01;
+  color: #f9bf01;
   margin-right: 1%;
 }
 
@@ -297,19 +301,19 @@
   padding-bottom: 0.25rem;
   text-indent: -32px;
   margin-right: -32px;
-  color: #555;
+  color: #333;
   font-weight: 200;
 }
 
 .project-section .project-list .project-list-item a {
-  color: #D89700;
+  color: #d89700;
   text-decoration: underline;
   transition: all 0.25s ease;
   font-weight: 400;
 }
 
 .project-section .project-list .project-list-item a:hover {
-  color: #F9BF01;
+  color: #f9bf01;
   text-decoration: none;
 }
 
@@ -345,7 +349,7 @@
   align-items: center;
   padding: 2%;
   margin: 0 auto;
-  background-color: #F9BF01;
+  background-color: #f9bf01;
   transition: all 0.25s ease;
 }
 
@@ -362,7 +366,7 @@
 }
 
 .project-section .project-button:hover .fa-arrow-alt-circle-right {
-  color: #F9BF01;
+  color: #f9bf01;
 }
 
 .project-section .project-button p {
@@ -391,7 +395,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
   .container {
     padding: 0 0 16%;
   }
@@ -403,7 +406,7 @@
   .project-title {
     height: 150px;
     padding: 4% 12%;
-    border-bottom: 8px solid #F9BF01;
+    border-bottom: 8px solid #f9bf01;
     border-bottom-left-radius: 20%;
   }
 
@@ -478,7 +481,7 @@
 
   .project-section .project-screen p {
     padding: 2%;
-    margin: 0 0 2rem;;
+    margin: 0 0 2rem;
   }
 
   .project-section .left-project {
@@ -496,7 +499,7 @@
   .project-section .center-project p {
     padding: 1% 4% 4%;
     border: none;
-    border-top: 5px solid #F9BF01;
+    border-top: 5px solid #f9bf01;
   }
 
   .project-section .project-tool {
@@ -513,7 +516,6 @@
 }
 
 @media screen and (max-width: 575px) {
-
   .project-section .project-tool p {
     font-size: 0.9em;
   }
