@@ -341,14 +341,19 @@
   padding: 0 0 0 6%;
 }
 
+.button-section {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
 .project-section .project-button {
   display: flex;
   flex-direction: row;
   width: 280px;
   height: 64px;
   align-items: center;
-  padding: 2%;
-  margin: 0 auto;
+  padding: 6%;
   background-color: #f9bf01;
   transition: all 0.25s ease;
 }

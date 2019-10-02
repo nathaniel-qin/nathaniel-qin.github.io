@@ -4,7 +4,7 @@ nav {
 }
 
 body {
-  background-image: url('../images/bg2.png');
+  background-image: url('../images/bg1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -13,6 +13,17 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Overpass', sans-serif;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 a {
