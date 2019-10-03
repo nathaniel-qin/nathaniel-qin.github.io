@@ -186,18 +186,6 @@ p, h6 {
   font-size: 0.9em;
 }
 
-.small-project .project-footer {
-  transition: all 0.5s ease;
-  background-color: #F9BF01;
-  padding: 4%;
-}
-
-.small-project .project-type {
-  color: white;
-  text-align: right;
-  font-size: 0.9em;
-}
-
 #klema {
   background-image: url('../images/small/klema.png');
 }
@@ -281,10 +269,6 @@ p, h6 {
   }
 
   .small-project .project-affiliation {
-    font-size: 0.8em;
-  }
-
-  .small-project .project-type {
     font-size: 0.8em;
   }
 }
