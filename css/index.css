@@ -39,11 +39,19 @@ body::after {
 }
 
 .intro h1 {
+  font-weight: 600;
   font-size: 3.5em;
 }
 
 .intro h2 {
+  font-weight: 300;
   font-size: 1.75em;
+  color: #222;
+}
+
+.intro h2 .bold {
+  color: black;
+  font-weight: 600;
 }
 
 p, h6 {
