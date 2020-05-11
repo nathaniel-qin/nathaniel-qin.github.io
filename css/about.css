@@ -123,10 +123,6 @@
   #my-picture {
     height: 400px;
   }
-
-  .about-blurb {
-    background-color: #F9BF01;
-  }
 }
 
 @media screen and (max-width: 767px) {
