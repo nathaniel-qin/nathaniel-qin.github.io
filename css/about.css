@@ -123,6 +123,10 @@
   #my-picture {
     height: 400px;
   }
+
+  .about-blurb {
+    background-color: #F9BF01;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -135,8 +139,13 @@
     background-color: #F9BF01;
   }
 
+  .my-download-section {
+    background-color: #F9BF01;
+  }
+
   .my-download {
     background-color: black;
+    margin: 0 16px 16px 0;
   }
 
   .my-download p {
@@ -145,10 +154,6 @@
 
   .my-download .fa-file-download {
     color: white;
-  }
-
-  .my-download-a {
-    background-color: #F9BF01;
   }
 
   .my-download:hover {
