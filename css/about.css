@@ -58,7 +58,7 @@
 
 #my-picture {
   background-image: url('../images/me.jpg');
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
