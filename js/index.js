@@ -54,7 +54,6 @@ window.onload = () => {
         if(j === lets[lets.length-1]) {
           j.removeEventListener('animationend', showFade);
           i.getElementsByClassName('project-body')[0].getElementsByTagName('div')[0].style.opacity = '0';
-          i.getElementsByClassName('project-footer')[0].style.backgroundColor = '#F9BF01';
         }
       }
     });
